@@ -11,26 +11,121 @@
     <script>try{var t=localStorage.getItem("gw-theme");if(t&&t!=="dark")document.documentElement.setAttribute("data-theme",t);var s=localStorage.getItem("gw-font-scale");if(s)document.documentElement.style.setProperty("--font-scale",s);}catch(e){}</script>
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <link rel="canonical" href="https://greenwar.org/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="GREENWAR ASBL">
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="GREENWAR ASBL">
     <meta property="og:title" content="GREENWAR ASBL — La planète ne doit plus être le prix du progrès">
-    <meta property="og:description" content="Faire de la régénération planétaire le modèle économique le plus performant.">
-    <meta property="og:image" content="assets/imgs/illustration-terre-symbiosique.jpg">
+    <meta property="og:description" content="Faire de la régénération des écosystèmes la source première de prospérité, de valeur et de développement pour 8 milliards de Citoyens-Consommateurs.">
+    <meta property="og:url" content="https://greenwar.org/">
+    <meta property="og:image" content="https://greenwar.org/assets/imgs/og-index.jpg">
+    <meta property="og:image:secure_url" content="https://greenwar.org/assets/imgs/og-index.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Terre régénérée vue de l'orbite protégée par des anneaux biosphériques émeraude et or — GREENWAR ASBL">
     <meta property="og:locale" content="fr_BE">
 
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@GreenWarASBL">
+    <meta name="twitter:creator" content="@GreenWarASBL">
+    <meta name="twitter:title" content="GREENWAR ASBL — La planète ne doit plus être le prix du progrès">
+    <meta name="twitter:description" content="Faire de la régénération des écosystèmes la source première de prospérité pour 8 milliards de Citoyens-Consommateurs.">
+    <meta name="twitter:image" content="https://greenwar.org/assets/imgs/og-index.jpg">
+    <meta name="twitter:image:alt" content="Terre régénérée protégée par des anneaux biosphériques émeraude et or — GREENWAR ASBL">
+
+    <!-- Schema.org Rich Snippets JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "NGO",
-      "name": "GREENWAR ASBL",
-      "alternateName": "GreenWar",
-      "url": "https://greenwar.org/",
-      "logo": "assets/imgs/logo-mark.png",
-      "email": "contact@greenwar.org",
-      "slogan": "Protecting life. Regenerating tomorrow.",
-      "description": "Association sans but lucratif belge œuvrant pour le développement symbiosique et l'émancipation des Citoyens-Consommateurs.",
-      "areaServed": "BE",
-      "address": { "@type": "PostalAddress", "addressRegion": "Bruxelles & Wallonie", "addressCountry": "BE" }
+      "@graph": [
+        {
+          "@type": "NGO",
+          "@id": "https://greenwar.org/#organization",
+          "name": "GREENWAR ASBL",
+          "alternateName": "GreenWar",
+          "url": "https://greenwar.org/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://greenwar.org/assets/imgs/logo-mark.png",
+            "width": 512,
+            "height": 512
+          },
+          "image": "https://greenwar.org/assets/imgs/og-index.jpg",
+          "email": "contact@greenwar.org",
+          "slogan": "Protecting life. Regenerating tomorrow.",
+          "description": "Association sans but lucratif belge œuvrant pour le développement symbiosique, la régénération des 510 065 000 km² de la Terre et l'émancipation des 8 milliards de Citoyens-Consommateurs.",
+          "areaServed": "BE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Bruxelles & Wallonie",
+            "addressCountry": "BE"
+          },
+          "knowsAbout": [
+            "Économie Symbiosique",
+            "Biotechnologies Régénératives",
+            "Traçabilité Cryptographique Ed25519",
+            "Sarcomusation & Biodégradation",
+            "Souveraineté Citoyenne"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://greenwar.org/#website",
+          "url": "https://greenwar.org/",
+          "name": "GREENWAR ASBL",
+          "publisher": {
+            "@id": "https://greenwar.org/#organization"
+          },
+          "inLanguage": "fr-BE"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://greenwar.org/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://greenwar.org/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://greenwar.org/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Qu'est-ce que le développement symbiosique selon GREENWAR ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le développement symbiosique repose sur le principe que toute activité humaine productive doit renforcer et bonifier l'écosystème qui la rend possible : créer, produire, entreprendre et s'enrichir en laissant la planète plus forte qu'avant."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quel est le rôle des 8 milliards de Citoyens-Consommateurs ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Les Citoyens-Consommateurs détiennent le pouvoir souverain d'acheter. En exigeant une traçabilité cryptographique infalsifiable et en orientant leurs achats vers des filières régénératrices, ils mettent fin aux chaînes d'exploitation destructrices."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quelles sont les 4 forces du nouveau système sociétal ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le modèle GREENWAR équilibre 4 forces complémentaires : Citoyens & Familles (éducation et achat), Associations (vigilance et alerte éthique), Entreprises (génie productif régénératif) et États (souveraineté et justice impartiale)."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
 </head>
