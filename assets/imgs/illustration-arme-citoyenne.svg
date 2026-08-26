@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <radialGradient id="arme-glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1c382b"/>
+      <stop offset="70%" stop-color="#0d1d16"/>
+      <stop offset="100%" stop-color="#060e0a"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#arme-glow)"/>
+  
+  <text x="600" y="70" fill="#ffd54f" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">L'ARME ÉCONOMIQUE DES 8 MILLIARDS DE CITOYENS</text>
+  <text x="600" y="105" fill="#2ed573" font-family="sans-serif" font-size="17" text-anchor="middle">Transformer l'acte d'achat en vote souverain pour la régénération planétaire</text>
+  
+  <!-- Central Shield of Sovereignty -->
+  <g transform="translate(450, 150)">
+    <polygon points="150,20 280,70 280,240 150,330 20,240 20,70" fill="#162a22" stroke="#ffd54f" stroke-width="4"/>
+    <circle cx="150" cy="160" r="65" fill="#0a1813" stroke="#2ed573" stroke-width="3"/>
+    <path d="M150 110 L150 210 M100 160 L200 160" stroke="#ffd54f" stroke-width="5" stroke-linecap="round"/>
+    <polygon points="150,110 165,135 135,135" fill="#ffd54f"/>
+    <polygon points="150,210 165,185 135,185" fill="#ffd54f"/>
+    <polygon points="100,160 125,145 125,175" fill="#ffd54f"/>
+    <polygon points="200,160 175,145 175,175" fill="#ffd54f"/>
+    <text x="150" y="270" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">POUVOIR SOUVERAIN</text>
+    <text x="150" y="295" fill="#2ed573" font-family="sans-serif" font-size="13" text-anchor="middle">8 000 000 000 Citoyens</text>
+  </g>
+
+  <!-- Surrounding Vectors -->
+  <!-- Left Side -->
+  <g transform="translate(80, 180)">
+    <rect width="320" height="120" rx="12" fill="#12221b" stroke="#2ed573" stroke-width="1.5"/>
+    <text x="30" y="45" fill="#ffd54f" font-family="sans-serif" font-size="18" font-weight="bold">1. BRIDER LES 3 PILIERS</text>
+    <text x="30" y="75" fill="#dff9fb" font-family="sans-serif" font-size="13">Refus absolu des produits issus de l'exploitation</text>
+    <text x="30" y="98" fill="#a8e6cf" font-family="sans-serif" font-size="13">humaine et du pillage de la biosphère.</text>
+  </g>
+
+  <g transform="translate(80, 340)">
+    <rect width="320" height="120" rx="12" fill="#12221b" stroke="#2ed573" stroke-width="1.5"/>
+    <text x="30" y="45" fill="#ffd54f" font-family="sans-serif" font-size="18" font-weight="bold">2. ENDIGUER LES FLÉAUX</text>
+    <text x="30" y="75" fill="#dff9fb" font-family="sans-serif" font-size="13">Tarir les circuits financiers alimentant la guerre,</text>
+    <text x="30" y="98" fill="#a8e6cf" font-family="sans-serif" font-size="13">la famine et le banditisme géopolitique.</text>
+  </g>
+
+  <!-- Right Side -->
+  <g transform="translate(800, 180)">
+    <rect width="320" height="120" rx="12" fill="#12221b" stroke="#ffd54f" stroke-width="1.5"/>
+    <text x="30" y="45" fill="#2ed573" font-family="sans-serif" font-size="18" font-weight="bold">3. MAÎTRISER LES CONQUÊTES</text>
+    <text x="30" y="75" fill="#dff9fb" font-family="sans-serif" font-size="13">Réorienter la recherche de profit vers des modèles</text>
+    <text x="30" y="98" fill="#ffd54f" font-family="sans-serif" font-size="13">exclusivement régénératifs et symbiosiques.</text>
+  </g>
+
+  <g transform="translate(800, 340)">
+    <rect width="320" height="120" rx="12" fill="#12221b" stroke="#ffd54f" stroke-width="1.5"/>
+    <text x="30" y="45" fill="#2ed573" font-family="sans-serif" font-size="18" font-weight="bold">4. REVENUS AUX EXPLOITEURS</text>
+    <text x="30" y="75" fill="#dff9fb" font-family="sans-serif" font-size="13">Générer les profits les plus extrêmes pour ceux</text>
+    <text x="30" y="98" fill="#ffd54f" font-family="sans-serif" font-size="13">qui enrichissent la Terre au lieu de l'épuiser.</text>
+  </g>
+  
+  <line x1="400" y1="240" x2="450" y2="270" stroke="#2ed573" stroke-width="2" stroke-dasharray="4,4"/>
+  <line x1="400" y1="400" x2="450" y2="360" stroke="#2ed573" stroke-width="2" stroke-dasharray="4,4"/>
+  <line x1="800" y1="240" x2="750" y2="270" stroke="#ffd54f" stroke-width="2" stroke-dasharray="4,4"/>
+  <line x1="800" y1="400" x2="750" y2="360" stroke="#ffd54f" stroke-width="2" stroke-dasharray="4,4"/>
+</svg>

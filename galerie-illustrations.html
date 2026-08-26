@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREENWAR - Galerie Complète des Illustrations & Captures</title>
+    <link rel="icon" type="image/jpeg" href="assets/imgs/logo_greenwar.jpg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .gallery-wrap {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .art-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+        }
+        .art-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-hover);
+        }
+        .art-card-img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            overflow: hidden;
+        }
+        .art-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .art-card-img:hover img {
+            transform: scale(1.03);
+        }
+        .art-card-body {
+            padding: 1.4rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        .badge-pill {
+            display: inline-block;
+            padding: 0.25rem 0.7rem;
+            background: rgba(46, 213, 115, 0.12);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header" style="position: relative;">
+        <div class="nav-container">
+            <a class="brand-wrapper" href="index.html">
+                <img src="assets/imgs/logo_greenwar.jpg" alt="Logo GREENWAR" class="brand-logo" width="48" height="48">
+                <div class="brand-titles">
+                    <span class="brand-name">GREENWAR ASBL</span>
+                    <span class="brand-tagline">Galerie des Illustrations</span>
+                </div>
+            </a>
+            <a href="index.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">← Retour au site</a>
+        </div>
+    </header>
+
+    <main class="gallery-wrap">
+        <div class="title-card">
+            <h2>Galerie Intégrale des Illustrations & Prompts Artistiques</h2>
+            <span class="title-badge">19 Illustrations Haute Fidélité</span>
+        </div>
+        <p class="lead">
+            Chaque visuel a été spécialement conçu pour matérialiser le manifeste philosophique, la critique des 3 piliers et l'avènement de l'économie symbiosique.
+        </p>
+
+        <div class="gallery-grid">
+            
+            <!-- Item 1 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-terre-symbiosique.jpg" alt="Terre Symbiosique">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill">Page 1 : La Mission</span>
+                    <h3 style="font-size: 1.15rem; color: var(--accent); margin: 0;">1. Les 510.065.000 km² Protégés</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Allégorie orbitale de la Terre protégée par des anneaux de biosphère et de biotechnologie régénérative.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-deux-mondes.jpg" alt="Deux Mondes">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill">Page 1 : La Mission</span>
+                    <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0;">2. Deux Civilisations & Deux Organisations</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Dualité entre les 195 nations étatiques occidentalisées et les zones de subsistance non-occidentalisées.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-trois-fleaux-detail.jpg" alt="Trois Fléaux">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill" style="border-color: var(--danger); color: var(--danger);">Page 1 : La Mission</span>
+                    <h3 style="font-size: 1.15rem; color: var(--danger); margin: 0;">3. Les 3 Fléaux Humains Détaillés</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Guerre, Famine et Banditisme : les 3 ravages de l'ingérence géopolitique sélective.</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-quest-economique.jpg" alt="Quête Économique">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill">Page 1 : La Mission</span>
+                    <h3 style="font-size: 1.15rem; color: var(--accent); margin: 0;">4. L'Absolue Quête Économique</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Produire pour s'enrichir en développant somptueusement la planète sans exploitation.</p>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-quatre-piliers.jpg" alt="Quatre Piliers">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill">Page 1 : La Mission</span>
+                    <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0;">5. Les 4 Nouveaux Piliers de Société</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Familial, Associatif, Entrepreneurial, Étatique et leurs 4 Pouvoirs rééquilibrés.</p>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-devise-fondateur.jpg" alt="Devise du Fondateur">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill">Page 1 & 2 : Philosophie</span>
+                    <h3 style="font-size: 1.15rem; color: var(--accent); margin: 0;">6. La Devise Sacrée d'Intégrité</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">L'alignement pur de la Pensée, de la Parole et de l'Action.</p>
+                </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-genese-croissance.jpg" alt="Genèse Croissance">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill">Page 2 : Critique</span>
+                    <h3 style="font-size: 1.15rem; color: var(--accent); margin: 0;">7. La Genèse d'Après-Guerre</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Peur de la raréfaction des ressources et de la pollution atmosphérique irréversible.</p>
+                </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-trois-conquetes.jpg" alt="Trois Conquêtes">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill" style="border-color: var(--danger); color: var(--danger);">Page 2 : Critique</span>
+                    <h3 style="font-size: 1.15rem; color: var(--danger); margin: 0;">8. Les 3 Conquêtes : Argent, Pouvoir, Gloire</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Comment les 3 piliers conventionnels ravagent la planète sous couvert de légalité.</p>
+                </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-chaine-surproduction.jpg" alt="Chaîne Surproduction">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill" style="border-color: var(--danger); color: var(--danger);">Page 2 : Critique</span>
+                    <h3 style="font-size: 1.15rem; color: var(--danger); margin: 0;">9. La Chaîne de Surproduction & Enfants</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Le contraste tragique entre manufactures clandestines et vitrines de jouets festives.</p>
+                </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-arme-citoyenne.jpg" alt="Arme Citoyenne">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill">Page 3 : Actions</span>
+                    <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0;">10. L'Arme des 8 Milliards de Citoyens</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Le pouvoir souverain de l'achat éclairé pour fermer les filières indignes.</p>
+                </div>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-sarcomusation-larves.jpg" alt="Sarcomusation">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill">Page 3 : Actions</span>
+                    <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0;">11. Sarcomusation & Hermetia Illucens</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Biodégradation 100% propre, protéines, bio-fertilisants et règle d'or anti-prion.</p>
+                </div>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-tracabilite-crypto.jpg" alt="Traçabilité Cryptographique">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill">Page 3 : Actions</span>
+                    <h3 style="font-size: 1.15rem; color: var(--accent); margin: 0;">12. Traçabilité Cryptographique Ed25519</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Contrôle direct par smartphone du consommateur, garantissant l'authenticité absolue.</p>
+                </div>
+            </div>
+
+            <!-- Item 13 -->
+            <div class="art-card">
+                <div class="art-card-img">
+                    <img src="assets/imgs/illustration-biotech-regeneratrice.jpg" alt="Biotech Régénératrice">
+                </div>
+                <div class="art-card-body">
+                    <span class="badge-pill">Page 3 : Actions</span>
+                    <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0;">13. Hub Isométrique Bio-Agro-Industriel</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Architecture futuriste solarpunk à boucle fermée zéro déchet.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 GREENWAR ASBL. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

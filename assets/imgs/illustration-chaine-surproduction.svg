@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dark-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#1b1c1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#dark-bg)"/>
+  <text x="600" y="60" fill="#ffd54f" font-family="sans-serif" font-size="26" font-weight="bold" text-anchor="middle">LA CHAÎNE INVISIBLE DE LA SURPRODUCTION MONDIALE</text>
+  <text x="600" y="95" fill="#a3b0a9" font-family="sans-serif" font-size="16" text-anchor="middle">Du travail forcé dans les pays exploités aux rayons des hypermarchés sans traçabilité</text>
+  
+  <!-- Left Side: L'Atelier Insalubre -->
+  <g transform="translate(80, 130)">
+    <rect width="480" height="460" rx="16" fill="#221515" stroke="#e74c3c" stroke-width="2"/>
+    <text x="240" y="45" fill="#ff7675" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle">1. L'EXPLOITATION EN SILENCE</text>
+    <rect x="30" y="70" width="420" height="150" rx="10" fill="#361d1d"/>
+    <text x="50" y="110" fill="#fab1a0" font-family="sans-serif" font-size="15" font-weight="bold">Ateliers insalubres et polluants</text>
+    <text x="50" y="140" fill="#dfe6e9" font-family="sans-serif" font-size="13">• Cadences forcées de 16 heures par jour.</text>
+    <text x="50" y="165" fill="#dfe6e9" font-family="sans-serif" font-size="13">• Châtiments corporels et violences physiques.</text>
+    <text x="50" y="190" fill="#dfe6e9" font-family="sans-serif" font-size="13">• Enfants contraints à la fabrication de jouets.</text>
+    
+    <rect x="30" y="240" width="420" height="180" rx="10" fill="#1a1111"/>
+    <text x="50" y="275" fill="#e17055" font-family="sans-serif" font-size="14" font-weight="bold">L'Ordre des Hypermarchés :</text>
+    <text x="50" y="305" fill="#b2bec3" font-family="sans-serif" font-size="13">Surproduire pour satisfaire les pics de Noël et de fête</text>
+    <text x="50" y="330" fill="#b2bec3" font-family="sans-serif" font-size="13">sans aucune obligation de traçabilité éthique.</text>
+    <text x="50" y="370" fill="#fab1a0" font-family="sans-serif" font-size="13" font-style="italic">« Pour qu'un enfant joue, un autre est broyé. »</text>
+  </g>
+
+  <!-- Right Side: Le Citoyen-Consommateur Libre -->
+  <g transform="translate(640, 130)">
+    <rect width="480" height="460" rx="16" fill="#12241c" stroke="#2ed573" stroke-width="2"/>
+    <text x="240" y="45" fill="#55efc4" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle">2. L'ILLUSION DU CHOIX LIBRE</text>
+    <rect x="30" y="70" width="420" height="150" rx="10" fill="#19382b"/>
+    <text x="50" y="110" fill="#ffd54f" font-family="sans-serif" font-size="15" font-weight="bold">Le Rayon d'Hypermarché Lumineux</text>
+    <text x="50" y="140" fill="#dfe6e9" font-family="sans-serif" font-size="13">• Achat innocent d'une maison de poupée ou château.</text>
+    <text x="50" y="165" fill="#dfe6e9" font-family="sans-serif" font-size="13">• Qualité et origine réelle totalement inconnues.</text>
+    <text x="50" y="190" fill="#dfe6e9" font-family="sans-serif" font-size="13">• Conscience anesthésiée par le marketing.</text>
+    
+    <rect x="30" y="240" width="420" height="180" rx="10" fill="#0c1913"/>
+    <text x="50" y="275" fill="#2ed573" font-family="sans-serif" font-size="14" font-weight="bold">L'Arme de Rupture GREENWAR :</text>
+    <text x="50" y="305" fill="#a8e6cf" font-family="sans-serif" font-size="13">Donner les moyens aux Citoyens-Consommateurs</text>
+    <text x="50" y="330" fill="#a8e6cf" font-family="sans-serif" font-size="13">de brider les 3 piliers grâce à la traçabilité intégrale</text>
+    <text x="50" y="355" fill="#a8e6cf" font-family="sans-serif" font-size="13">et au boycott certifié des chaînes indignes.</text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs><radialGradient id="bg-df" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#182e24"/><stop offset="100%" stop-color="#0a1510"/></radialGradient></defs>
+  <rect width="1200" height="675" fill="url(#bg-df)"/>
+  <rect x="150" y="80" width="900" height="515" rx="24" fill="#12241d" stroke="#ffd54f" stroke-width="3"/>
+  <!-- Crown Triad -->
+  <g transform="translate(250, 140)">
+    <circle cx="100" cy="100" r="50" fill="#1b3b2d" stroke="#2ed573" stroke-width="3"/>
+    <text x="100" y="95" fill="#ffd54f" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">PENSÉE</text>
+    <text x="100" y="118" fill="#ffffff" font-family="sans-serif" font-size="11" text-anchor="middle">Conscience</text>
+  </g>
+  <g transform="translate(500, 140)">
+    <circle cx="100" cy="100" r="50" fill="#1b3b2d" stroke="#ffd54f" stroke-width="3"/>
+    <text x="100" y="95" fill="#2ed573" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">PAROLE</text>
+    <text x="100" y="118" fill="#ffffff" font-family="sans-serif" font-size="11" text-anchor="middle">Vérité</text>
+  </g>
+  <g transform="translate(750, 140)">
+    <circle cx="100" cy="100" r="50" fill="#1b3b2d" stroke="#2ed573" stroke-width="3"/>
+    <text x="100" y="95" fill="#ffd54f" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">ACTION</text>
+    <text x="100" y="118" fill="#ffffff" font-family="sans-serif" font-size="11" text-anchor="middle">Intégrité</text>
+  </g>
+  <path d="M390 240 L560 240 M640 240 L810 240" stroke="#ffd54f" stroke-width="3" stroke-dasharray="6,4"/>
+  <!-- Main Quote -->
+  <text x="600" y="370" fill="#ffd54f" font-family="serif" font-size="28" font-style="italic" font-weight="bold" text-anchor="middle">« À ceux qui pensent ce qu’ils disent,</text>
+  <text x="600" y="420" fill="#ffd54f" font-family="serif" font-size="28" font-style="italic" font-weight="bold" text-anchor="middle">Disent ce qu’ils pensent,</text>
+  <text x="600" y="470" fill="#ffd54f" font-family="serif" font-size="28" font-style="italic" font-weight="bold" text-anchor="middle">Et font ce qu’ils disent. »</text>
+  <text x="600" y="535" fill="#2ed573" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" letter-spacing="3">— LA DEVISE SACRÉE DE GREENWAR ASBL —</text>
+</svg>
