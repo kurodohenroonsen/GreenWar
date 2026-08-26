@@ -2,423 +2,358 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GREENWAR ASBL - La planète ne doit plus être le prix du progrès</title>
-    <meta name="description" content="GREENWAR ASBL : Faire de la régénération des écosystèmes la source première de prospérité, de valeur et de développement pour plus de 8 milliards de Citoyens-Consommateurs.">
-    <link rel="icon" type="image/jpeg" href="assets/imgs/logo_greenwar.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GREENWAR ASBL — La planète ne doit plus être le prix du progrès</title>
+    <meta name="description" content="GREENWAR ASBL, association belge : faire de la régénération des écosystèmes la source première de prospérité pour 8 milliards de Citoyens-Consommateurs.">
+    <meta name="theme-color" content="#0b100e">
+    <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+    <link rel="apple-touch-icon" href="assets/imgs/logo-mark.png">
+    <script>try{var t=localStorage.getItem("gw-theme");if(t&&t!=="dark")document.documentElement.setAttribute("data-theme",t);var s=localStorage.getItem("gw-font-scale");if(s)document.documentElement.style.setProperty("--font-scale",s);}catch(e){}</script>
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Open Graph / Meta -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="GREENWAR ASBL - La planète ne doit plus être le prix du progrès">
-    <meta property="og:description" content="Changer les règles du jeu : faire de la régénération planétaire le modèle économique le plus performant.">
+    <meta property="og:site_name" content="GREENWAR ASBL">
+    <meta property="og:title" content="GREENWAR ASBL — La planète ne doit plus être le prix du progrès">
+    <meta property="og:description" content="Faire de la régénération planétaire le modèle économique le plus performant.">
     <meta property="og:image" content="assets/imgs/illustration-terre-symbiosique.jpg">
+    <meta property="og:locale" content="fr_BE">
 
-    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "NGO",
       "name": "GREENWAR ASBL",
+      "alternateName": "GreenWar",
       "url": "https://greenwar.org/",
-      "logo": "assets/imgs/logo_greenwar.jpg",
-      "description": "ASBL dédiée à l'avènement du développement symbiosique, à l'émancipation des Citoyens-Consommateurs et à l'équilibre des 4 forces sociétales.",
-      "foundingLocation": {
-        "@type": "Place",
-        "name": "Belgique"
-      },
-      "motto": "Protecting life. Regenerating tomorrow."
+      "logo": "assets/imgs/logo-mark.png",
+      "email": "contact@greenwar.org",
+      "slogan": "Protecting life. Regenerating tomorrow.",
+      "description": "Association sans but lucratif belge œuvrant pour le développement symbiosique et l'émancipation des Citoyens-Consommateurs.",
+      "areaServed": "BE",
+      "address": { "@type": "PostalAddress", "addressRegion": "Bruxelles & Wallonie", "addressCountry": "BE" }
     }
     </script>
 </head>
 <body>
 
-    <!-- Skip Link for Keyboard Accessibility -->
-    <a href="#main-content" class="skip-link">Passer au contenu principal</a>
+    <a href="#main-content" class="skip-link">Aller au contenu</a>
 
-    <!-- Site Header & Navigation -->
     <header class="site-header">
-        <div class="nav-container">
-            <a class="brand-wrapper" href="index.html" aria-label="Page d'accueil GREENWAR ASBL">
-                <img src="assets/imgs/logo_greenwar.jpg" alt="Logo officiel GREENWAR ASBL - Protecting life. Regenerating tomorrow." class="brand-logo" width="52" height="52">
-                <div class="brand-titles">
-                    <span class="brand-name">GREENWAR</span>
-                    <span class="brand-tagline">Protecting life. Regenerating tomorrow.</span>
-                </div>
+        <div class="container">
+            <a class="brand" href="index.html" aria-label="GREENWAR ASBL — accueil">
+                <img src="assets/imgs/logo-mark.png" alt="" class="brand__logo" width="42" height="42">
+                <span>
+                    <span class="brand__name">GREENWAR</span>
+                    <span class="brand__tagline">Protecting life. Regenerating tomorrow.</span>
+                </span>
             </a>
-            
-            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu de navigation">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu">
+                <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
             </button>
-            
-            <nav id="primary-navigation" aria-label="Navigation principale">
-                <ul class="nav-menu">
-                    <li><a class="nav-link active" href="index.html" aria-current="page">La Vision & Mission</a></li>
-                    <li><a class="nav-link" href="analyse-des-piliers.html">Critique des 3 Piliers</a></li>
-                    <li><a class="nav-link" href="action-symbiosique.html">L'Arme Citoyenne & Solutions</a></li>
+
+            <nav id="primary-nav" class="nav" aria-label="Navigation principale">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="index.html" aria-current="page">La mission</a></li>
+                    <li><a class="nav__link" href="analyse-des-piliers.html">Le diagnostic</a></li>
+                    <li><a class="nav__link" href="action-symbiosique.html">Solutions &amp; action</a></li>
                 </ul>
+                <a class="btn btn--primary btn--sm nav__cta" href="action-symbiosique.html#rejoindre">Nous rejoindre</a>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content Area -->
     <main id="main-content" tabindex="-1">
-        <div class="container" style="padding-top: 2rem;">
 
-            <!-- Editorial Hero Story Split (Punchy Vision & Planetary Core) -->
-            <section class="story-split" style="margin-top: 1rem; border-color: var(--accent);">
-                <div class="story-text">
-                    <span class="story-badge">Manifeste Officiel GREENWAR</span>
-                    <h1 style="font-size: 2.35rem; margin: 0; color: #fff; font-family: var(--font-serif); line-height: 1.25;">
-                        La planète ne doit plus être le <span style="color: var(--accent);">prix du progrès</span>.
-                    </h1>
-                    <p class="lead" style="color: var(--text-color); font-size: 1.15rem;">
-                        Nous voulons <strong>renverser la logique actuelle</strong> : faire de la régénération des écosystèmes une source directe de <em>prospérité, de valeur et de développement</em> pour toute l'humanité.
-                    </p>
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
-                        <a href="#constat" class="btn btn-primary">Notre Constat & Conviction</a>
-                        <a href="#symbiose" class="btn btn-accent">Le Modèle Symbiosique</a>
+        <!-- Hero -->
+        <section class="page-hero" aria-labelledby="hero-title">
+            <div class="container page-hero__inner">
+                <div class="page-hero__text">
+                    <span class="eyebrow">Manifeste GREENWAR ASBL</span>
+                    <h1 id="hero-title">La planète ne doit plus être le <span class="accent">prix du progrès</span>.</h1>
+                    <p class="lead">Nous voulons renverser la logique actuelle : faire de la régénération des écosystèmes une source directe de prospérité, de valeur et de développement pour toute l'humanité.</p>
+                    <div class="btn-row">
+                        <a href="#constat" class="btn btn--primary">Notre constat</a>
+                        <a href="#symbiose" class="btn btn--ghost">Le modèle symbiosique</a>
                     </div>
                 </div>
-                <div class="story-media">
-                    <img src="assets/imgs/illustration-terre-symbiosique.jpg" 
-                         alt="[FORMAT: 16:9, Ultra-High Definition 8k] [STYLE: Cinematic Octane 3D Render / Futuristic Eco-Symbiosic Concept Art] [PROMPT: Wide cinematic shot of planet Earth seen from orbit, where the entire 510,065,000 square kilometers surface is protected by glowing biospheric energy rings in vibrant emerald green and warm liquid gold. The continents pulse with hyper-connected ecological networks, thriving biodomes, lush reforested canopies, and regenerative biotechnology hubs. High-tech subtle holographic overlays depict living carbon cycle loops and zero-entropy closed-loop cycles. Dramatic side lighting from a rising sun, deep dark celestial background with distant nebula, volumetric lighting, photorealistic textures, Unreal Engine 5 aesthetic, 8k resolution.]" 
-                         loading="lazy">
-                    <details class="story-prompt-details">
-                        <summary>🔍 Inspecter le prompt de l'image</summary>
-                        <div class="prompt-content">
-                            <strong>Prompt :</strong> Wide cinematic shot of planet Earth seen from orbit, where the entire 510,065,000 square kilometers surface is protected by glowing biospheric energy rings in vibrant emerald green and warm liquid gold.
-                        </div>
-                    </details>
-                </div>
-            </section>
-
-            <!-- Key Global Metrics Grid -->
-            <div class="grid-4" style="margin: 2.2rem 0;">
-                <div class="stat-box">
-                    <div class="stat-number">195</div>
-                    <div class="stat-label">Nations & États</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">8 Mrds</div>
-                    <div class="stat-label">Citoyens-Consommateurs</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">510 M</div>
-                    <div class="stat-label">km² de Terre à Bonifier</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">4 Forces</div>
-                    <div class="stat-label">Un Seul Même Système</div>
+                <div class="page-hero__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-terre-symbiosique-800.webp 800w, assets/imgs/illustration-terre-symbiosique.webp 1376w" sizes="(max-width: 860px) 100vw, 50vw">
+                        <img src="assets/imgs/illustration-terre-symbiosique.jpg" width="1376" height="768" alt="La Terre vue depuis l'orbite, entourée d'anneaux lumineux verts et dorés symbolisant une biosphère régénérée." fetchpriority="high">
+                    </picture>
                 </div>
             </div>
+        </section>
 
-            <!-- Section 1 : Notre Constat & Notre Conviction -->
-            <section id="constat" aria-labelledby="constat-title">
-                <div class="title-card">
-                    <h2 id="constat-title">1. Notre Constat & Notre Conviction</h2>
-                    <span class="title-badge">Le Diagnostic</span>
+        <!-- Chiffres -->
+        <section class="section" aria-label="Chiffres clés">
+            <div class="container">
+                <ul class="stats" role="list">
+                    <li class="stat"><span class="stat__value">195</span><span class="stat__label">Nations &amp; États</span></li>
+                    <li class="stat"><span class="stat__value">8 milliards</span><span class="stat__label">de Citoyens-Consommateurs</span></li>
+                    <li class="stat"><span class="stat__value">510 M km²</span><span class="stat__label">de surface terrestre à bonifier</span></li>
+                    <li class="stat"><span class="stat__value">4 forces</span><span class="stat__label">un seul et même système</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 1. Constat & conviction -->
+        <section class="section" id="constat" aria-labelledby="constat-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">01 — Le diagnostic</span>
+                    <h2 id="constat-title">Notre constat, notre conviction</h2>
+                    <p>Limiter, compenser, réparer : ce n'est plus suffisant. Il faut construire des modèles qui améliorent réellement le monde dont ils dépendent.</p>
                 </div>
 
-                <!-- Story Split 1 : Constat (Image Left + Text Right) -->
-                <div class="story-split">
-                    <div class="story-media">
-                        <img src="assets/imgs/illustration-deux-mondes.jpg" 
-                             alt="[FORMAT: 16:9, Ultra-High Definition 8k] [STYLE: Cinematic Concept Art / Geopolitical Dualism] [PROMPT: A wide widescreen conceptual illustration representing the world at the dawn of the third millennium divided into two civilizations: on one side, affluent western state capitals with monolithic parliamentary domes and automated glass corporate skyscrapers; on the other side, non-western resource-rich lands marked by ecological extraction and vulnerable communities. In the sky above, a glowing interconnected web of 8 billion golden human silhouettes represents the global Consumer-Citizens rising to bridge the divide. Atmospheric lighting, rich contrasting emerald green, deep charcoal and vibrant gold accents, 8k resolution.]" 
-                             loading="lazy">
-                        <details class="story-prompt-details">
-                            <summary>🔍 Inspecter le prompt de l'image</summary>
-                            <div class="prompt-content">
-                                <strong>Prompt :</strong> A wide widescreen conceptual illustration representing the world divided into two civilizations bridged by 8 billion golden Consumer-Citizens.
-                            </div>
-                        </details>
+                <article class="feature">
+                    <div class="feature__media">
+                        <picture>
+                            <source type="image/webp" srcset="assets/imgs/illustration-deux-mondes-800.webp 800w, assets/imgs/illustration-deux-mondes.webp 1376w" sizes="(max-width: 860px) 100vw, 50vw">
+                            <img src="assets/imgs/illustration-deux-mondes.jpg" width="1376" height="768" alt="Deux mondes côte à côte : des capitales prospères face à des territoires d'extraction appauvris." loading="lazy">
+                        </picture>
                     </div>
-                    <div class="story-text">
-                        <span class="story-badge">Notre Constat</span>
-                        <h3>Limiter, compenser, réparer : ce n’est plus suffisant.</h3>
-                        <p class="lead">
-                            Nous avons appris à réduire les dégâts. <strong>Pas encore à construire des modèles qui améliorent réellement le monde dont ils dépendent.</strong>
-                        </p>
-                        <p>
-                            Le combat entre les peuples s'est transformé en un combat incessant entre les riches et les pauvres au sein des 195 nations, maintenant les zones non-occidentalisées sous la coupe de 3 fléaux majeurs : <em>la guerre, la famine et le banditisme</em>.
-                        </p>
+                    <div class="feature__body">
+                        <span class="eyebrow eyebrow--red">Notre constat</span>
+                        <h3>Nous avons appris à réduire les dégâts, pas à régénérer.</h3>
+                        <p class="lead">Le combat entre les peuples s'est transformé en un combat incessant entre les riches et les pauvres au sein des 195 nations.</p>
+                        <p>Ce combat maintient les zones non-occidentalisées sous la coupe de trois fléaux majeurs : <strong>la guerre, la famine et le banditisme</strong>.</p>
                     </div>
+                </article>
+
+                <article class="feature feature--reverse">
+                    <div class="feature__media">
+                        <picture>
+                            <source type="image/webp" srcset="assets/imgs/illustration-trois-fleaux-detail-800.webp 800w, assets/imgs/illustration-trois-fleaux-detail.webp 1376w" sizes="(max-width: 860px) 100vw, 50vw">
+                            <img src="assets/imgs/illustration-trois-fleaux-detail.jpg" width="1376" height="768" alt="Triptyque allégorique des trois fléaux : guerre, famine et banditisme." loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="feature__body">
+                        <span class="eyebrow">Notre conviction</span>
+                        <h3>L'économie ne doit pas choisir entre prospérité et planète.</h3>
+                        <p class="lead">Elle doit devenir capable de produire plus de valeur en régénérant les ressources naturelles qu'en les épuisant.</p>
+                        <p>GREENWAR transforme cette conviction en action : nous développons et faisons émerger des solutions où <strong>performance économique, utilité collective et régénération environnementale</strong> deviennent indissociables.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 2. Développement symbiosique -->
+        <section class="section section--tint" id="symbiose" aria-labelledby="symbiose-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow eyebrow--gold">02 — Le modèle</span>
+                    <h2 id="symbiose-title">Le développement symbiosique : ne plus seulement être durable, devenir régénératif</h2>
                 </div>
 
-                <!-- Story Split 2 : Notre Conviction & Notre Mission (Text Left + Image Right Reverse) -->
-                <div class="story-split reverse" style="border-color: var(--primary);">
-                    <div class="story-media">
-                        <img src="assets/imgs/illustration-trois-fleaux-detail.jpg" 
-                             alt="[FORMAT: 16:9, Ultra-High Definition 8k] [STYLE: Dark Atmospheric Allegory / Triptych Narrative Art] [PROMPT: A powerful allegorical triptych detailing the three human plagues ravaging non-westernized nations: 1. War, 2. Famine, 3. Banditry under geopolitical extraction conditions]" 
-                             loading="lazy">
-                        <details class="story-prompt-details">
-                            <summary>🔍 Inspecter le prompt de l'image</summary>
-                            <div class="prompt-content">
-                                <strong>Prompt :</strong> A powerful allegorical triptych detailing the three human plagues: War, Famine, and Banditry.
-                            </div>
-                        </details>
+                <article class="feature">
+                    <div class="feature__media">
+                        <picture>
+                            <source type="image/webp" srcset="assets/imgs/illustration-quest-economique-800.webp 800w, assets/imgs/illustration-quest-economique.webp 1376w" sizes="(max-width: 860px) 100vw, 50vw">
+                            <img src="assets/imgs/illustration-quest-economique.jpg" width="1376" height="768" alt="Vue aérienne d'un territoire régénéré organisé en cercles concentriques autour d'une biosphère lumineuse." loading="lazy">
+                        </picture>
                     </div>
-                    <div class="story-text">
-                        <span class="story-badge" style="border-color: var(--primary); color: var(--primary); background: rgba(46, 213, 115, 0.1);">Notre Conviction & Mission</span>
-                        <h3 style="color: var(--primary);">L’économie ne doit pas choisir entre prospérité et planète.</h3>
-                        <p class="lead">
-                            Elle doit devenir capable de <strong>produire plus de valeur en régénérant les ressources naturelles</strong> qu’en les épuisant.
-                        </p>
-                        <p>
-                            <strong>GREENWAR transforme cette conviction en action :</strong> nous développons et faisons émerger des solutions où <em>performance économique, utilité collective et régénération environnementale</em> deviennent indissociables.
-                        </p>
+                    <div class="feature__body">
+                        <p class="lead">Le développement symbiosique repose sur une idée simple : <strong>toute activité humaine devrait renforcer l'écosystème qui la rend possible.</strong></p>
+                        <p>Créer, produire, entreprendre, s'enrichir — mais en laissant la planète plus forte qu'avant.</p>
+                        <blockquote class="callout callout--gold">
+                            <p>« Exploiter au maximum les ressources naturelles de la Terre en bonifiant ses 510 065 000 km² pour générer les profits les plus extrêmes, destinés exclusivement à ses acteurs. »</p>
+                            <cite>La loi universelle de GreenWar</cite>
+                        </blockquote>
                     </div>
-                </div>
-            </section>
+                </article>
+            </div>
+        </section>
 
-            <!-- Section 2 : Le Développement Symbiosique -->
-            <section id="symbiose" aria-labelledby="symbiose-title">
-                <div class="title-card">
-                    <h2 id="symbiose-title">2. Le Développement Symbiosique : Devenir Régénératif</h2>
-                    <span class="title-badge">Le Modèle</span>
+        <!-- 3. Le pouvoir d'agir -->
+        <section class="section" id="pouvoir" aria-labelledby="pouvoir-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">03 — Le levier</span>
+                    <h2 id="pouvoir-title">Le pouvoir d'agir : l'arme des 8 milliards</h2>
+                    <p>Chaque achat est un choix souverain. Chaque investissement, un choix politique. Chaque modèle de production, un choix de civilisation.</p>
                 </div>
 
-                <!-- Story Split 3 : Symbiose (Image Left + Text Right) -->
-                <div class="story-split" style="border-color: var(--accent);">
-                    <div class="story-media">
-                        <img src="assets/imgs/illustration-quest-economique.jpg" 
-                             alt="[FORMAT: 16:9, Ultra-High Definition 8k] [STYLE: Solarpunk Conceptual Infographic / 3D Holographic Rendering] [PROMPT: A magnificent circular visual representation of the Absolute Symbiosic Quest of GREENWAR: in the center, a luminous celestial biosphere surrounded by four golden rings representing Zero Exploitation, Eco-Aligned Profits, Closed-Loop Bioremediation, and P2P Transparency. Glowing green energy pulses flow from the center into revitalized rivers, biodiverse agro-forestry belts, and sustainable community biomanufacturing hubs. Warm golden ray lighting, futuristic clean aesthetic, photorealistic, 8k resolution.]" 
-                             loading="lazy">
-                        <details class="story-prompt-details">
-                            <summary>🔍 Inspecter le prompt de l'image</summary>
-                            <div class="prompt-content">
-                                <strong>Prompt :</strong> The Absolute Symbiosic Quest of GREENWAR: 4 golden rings (Zero Exploitation, Eco-Aligned Profits, Closed-Loop Bioremediation, P2P Transparency).
-                            </div>
-                        </details>
+                <article class="feature feature--reverse">
+                    <div class="feature__media">
+                        <picture>
+                            <source type="image/webp" srcset="assets/imgs/illustration-arme-citoyenne-800.webp 800w, assets/imgs/illustration-arme-citoyenne.webp 1376w" sizes="(max-width: 860px) 100vw, 50vw">
+                            <img src="assets/imgs/illustration-arme-citoyenne.jpg" width="1376" height="768" alt="Un bouclier doré au-dessus de la Terre, alimenté par des faisceaux de lumière venant de mains humaines." loading="lazy">
+                        </picture>
                     </div>
-                    <div class="story-text">
-                        <span class="story-badge" style="border-color: var(--accent); color: var(--accent); background: rgba(255, 213, 79, 0.1);">Régénération Radicale</span>
-                        <h3>Ne plus seulement être durable. Devenir régénératif.</h3>
-                        <p class="lead" style="color: var(--accent);">
-                            Le développement symbiosique repose sur une idée simple : <strong>toute activité humaine devrait renforcer l’écosystème qui la rend possible.</strong>
-                        </p>
-                        <p style="font-size: 1.1rem; font-weight: 700; color: #fff;">
-                            Créer. Produire. Entreprendre. S’enrichir.<br>
-                            <span style="color: var(--primary);">Mais en laissant la planète plus forte qu’avant.</span>
-                        </p>
-                        <div style="background: rgba(255, 213, 79, 0.08); border-left: 3px solid var(--accent); padding: 1rem; border-radius: 4px; font-size: 0.92rem; color: var(--text-muted);">
-                            <em>« Exploiter au maximum les ressources naturelles de la Terre en bonifiant ses 510.065.000 km² pour générer les profits les plus extrêmes destinés exclusivement à ses acteurs. »</em>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 3 : Le Pouvoir d'Agir & L'Arme Citoyenne -->
-            <section id="pouvoir" aria-labelledby="pouvoir-title">
-                <div class="title-card">
-                    <h2 id="pouvoir-title">3. Le Pouvoir d'Agir : L'Arme des 8 Milliards</h2>
-                    <span class="title-badge">Le Levier</span>
-                </div>
-
-                <!-- Story Split 4 : Pouvoir d'agir (Text Left + Image Right Reverse) -->
-                <div class="story-split reverse" style="border-color: var(--primary);">
-                    <div class="story-media">
-                        <img src="assets/imgs/illustration-arme-citoyenne.jpg" 
-                             alt="[FORMAT: 16:9, Ultra-High Definition 8k] [STYLE: Cinematic Sci-Fi Concept Art / Heroic Realism] [PROMPT: A high-concept visual metaphor depicting the economic liberation of 8 billion citizens: In the center, a gigantic translucent golden shield inscribed with glowing mathematical and ecological vectors radiates over a vibrant blue-green Earth. From the hands of diverse people around the world, beams of green and gold light converge onto the shield, deflecting dark extractive industrial gears while channeling pure revitalizing energy into depleted rivers and forests. Cinematic perspective, lens flare, volumetric rays, Unreal Engine 5 render, 8k resolution.]" 
-                             loading="lazy">
-                        <details class="story-prompt-details">
-                            <summary>🔍 Inspecter le prompt de l'image</summary>
-                            <div class="prompt-content">
-                                <strong>Prompt :</strong> The economic shield of 8 billion Consumer-Citizens deflecting destructive industrial extraction.
-                            </div>
-                        </details>
-                    </div>
-                    <div class="story-text">
-                        <span class="story-badge" style="border-color: var(--primary); color: var(--primary); background: rgba(46, 213, 115, 0.1);">Souveraineté Économique</span>
-                        <h3 style="color: var(--primary);">Transformer chaque choix en force de changement</h3>
-                        <ul class="checked-list" style="margin: 0; font-size: 1.05rem;">
+                    <div class="feature__body">
+                        <h3>Transformer chaque choix en force de changement</h3>
+                        <ul class="check-list">
                             <li><strong>Chaque achat</strong> est un choix souverain.</li>
                             <li><strong>Chaque investissement</strong> est un choix politique.</li>
                             <li><strong>Chaque modèle de production</strong> est un choix de civilisation.</li>
                         </ul>
-                        <p class="lead">
-                            GREENWAR donne aux Citoyens-Consommateurs les outils technologiques et cryptographiques (traçabilité P2P Ed25519) pour imposer par leur pouvoir d'achat la fin des chaînes d'exploitation opaques.
-                        </p>
+                        <p>GREENWAR donne aux Citoyens-Consommateurs les outils technologiques et cryptographiques — traçabilité pair-à-pair signée Ed25519 — pour imposer, par leur pouvoir d'achat, la fin des chaînes d'exploitation opaques.</p>
+                        <div class="btn-row">
+                            <a href="action-symbiosique.html" class="btn btn--ghost">Découvrir les solutions</a>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </article>
+            </div>
+        </section>
 
-            <!-- Section 4 : Quatre Forces, Un Même Système -->
-            <section id="forces" aria-labelledby="forces-title">
-                <div class="title-card">
-                    <h2 id="forces-title">4. Quatre Forces, Un Même Système</h2>
-                    <span class="title-badge">L'Alliance</span>
-                </div>
-
-                <!-- Story Split 5 : 4 Forces Intro (Image Left + Text Right) -->
-                <div class="story-split">
-                    <div class="story-media">
-                        <img src="assets/imgs/illustration-quatre-piliers.jpg" 
-                             alt="[FORMAT: 16:9, Ultra-High Definition 8k] [STYLE: Solarpunk Monumental Architecture / Neo-Classical Glassmorphism] [PROMPT: Monumental architectural visualization of four grand crystal and living-flora pillars supporting a luminous spherical ecosystem representing humanity. The four pillars are labeled with glowing runes: 1. Familial, 2. Associatif, 3. Entrepreneurial, 4. Étatique. Above them hover the four symbiotic powers: Executive, Legislative, Judicial, and Media. Rays of dawn light cut through morning mist, serene reflection pool in the foreground, breathtaking scale, photorealistic architectural photography, Unreal Engine 5 render, 8k.]" 
-                             loading="lazy">
-                        <details class="story-prompt-details">
-                            <summary>🔍 Inspecter le prompt de l'image</summary>
-                            <div class="prompt-content">
-                                <strong>Prompt :</strong> Four grand crystal and living-flora pillars supporting humanity: Citoyens, Associations, Entreprises, États.
-                            </div>
-                        </details>
-                    </div>
-                    <div class="story-text">
-                        <span class="story-badge">Convergence Systémique</span>
-                        <h3>Citoyens • Associations • Entreprises • États</h3>
-                        <p class="lead">
-                            La transformation ne viendra pas d’un seul acteur.
-                        </p>
-                        <p>
-                            Elle viendra de leur capacité à créer ensemble un modèle où <strong>intérêt individuel et intérêt collectif cessent de s’opposer</strong>.
-                        </p>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">
-                            Chacun des quatre piliers incarne un contre-pouvoir souverain garantissant l'équilibre global de la société symbiosique.
-                        </p>
-                    </div>
+        <!-- 4. Quatre forces -->
+        <section class="section section--tint" id="forces" aria-labelledby="forces-title">
+            <div class="container">
+                <div class="section-head section-head--center">
+                    <span class="eyebrow eyebrow--gold">04 — L'alliance</span>
+                    <h2 id="forces-title">Quatre forces, un même système</h2>
+                    <p>La transformation ne viendra pas d'un seul acteur. Elle viendra de la capacité des citoyens, associations, entreprises et États à créer ensemble un modèle où intérêt individuel et intérêt collectif cessent de s'opposer.</p>
                 </div>
 
-                <!-- 4 Forces Cards Grid -->
-                <div class="grid-4" style="margin-top: 2rem;">
-                    <!-- Force 1 Card -->
-                    <div class="card">
-                        <img src="assets/imgs/card-pilier-familial.jpg" 
-                             alt="[FORMAT: 16:9] [STYLE: Warm Cozy Hearth Photography] [PROMPT: The Familial Pillar: A multi-generational family sitting together around a glowing hearth surrounded by living vines, transmitting ancient wisdom]" 
-                             class="card-img-top" 
-                             loading="lazy">
-                        <div class="card-header">
-                            <h3 class="card-title">1. Citoyens & Familles</h3>
+                <div class="grid grid--4">
+                    <article class="card">
+                        <div class="card__media">
+                            <picture>
+                                <source type="image/webp" srcset="assets/imgs/card-pilier-familial-800.webp">
+                                <img src="assets/imgs/card-pilier-familial.jpg" width="1376" height="768" alt="Une famille de plusieurs générations réunie autour d'un feu." loading="lazy">
+                            </picture>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text">L'éducation aux valeurs altruistes, la souveraineté de l'achat et la protection des générations futures.</p>
-                            <p style="font-weight: 700; color: var(--primary); font-size: 0.88rem; margin-top: auto;">→ Pouvoir Exécutif Citoyen</p>
+                        <div class="card__body">
+                            <span class="card__index">01</span>
+                            <h3>Citoyens &amp; familles</h3>
+                            <p>L'éducation aux valeurs altruistes, la souveraineté de l'achat et la protection des générations futures.</p>
+                            <span class="card__foot">Pouvoir exécutif citoyen</span>
                         </div>
-                    </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media">
+                            <picture>
+                                <source type="image/webp" srcset="assets/imgs/card-pilier-associatif-800.webp">
+                                <img src="assets/imgs/card-pilier-associatif.jpg" width="1376" height="768" alt="Des bénévoles travaillent ensemble dans un atelier associatif baigné de lumière." loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card__body">
+                            <span class="card__index">02</span>
+                            <h3>Associations</h3>
+                            <p>L'organe de vigilance non-marchande, d'alerte éthique et d'audit indépendant des filières.</p>
+                            <span class="card__foot">Pouvoir législatif éthique</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media">
+                            <picture>
+                                <source type="image/webp" srcset="assets/imgs/card-pilier-entrepreneurial-800.webp">
+                                <img src="assets/imgs/card-pilier-entrepreneurial.jpg" width="1376" height="768" alt="Des ingénieurs testent des solutions nutritives dans une serre-laboratoire." loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card__body">
+                            <span class="card__index">03</span>
+                            <h3>Entreprises</h3>
+                            <p>Le génie productif régénératif, récompensé par la prospérité pour chaque écosystème bonifié.</p>
+                            <span class="card__foot">Pouvoir judiciaire de marché</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media">
+                            <picture>
+                                <source type="image/webp" srcset="assets/imgs/card-pilier-etatique-800.webp">
+                                <img src="assets/imgs/card-pilier-etatique.jpg" width="1376" height="768" alt="Une salle parlementaire moderne en bois et marbre, ouverte sur la lumière." loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card__body">
+                            <span class="card__index">04</span>
+                            <h3>États &amp; nations</h3>
+                            <p>Le garant impartial de la souveraineté, de la justice d'arbitrage et du maintien des biens communs.</p>
+                            <span class="card__foot">Pouvoir médiatique libre</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Force 2 Card -->
-                    <div class="card">
-                        <img src="assets/imgs/card-pilier-associatif.jpg" 
-                             alt="[FORMAT: 16:9] [STYLE: Sunlit Civic Workshop Photography] [PROMPT: The Associatif Pillar: Citizens, legal volunteers and ecological auditors in a community workshop]" 
-                             class="card-img-top" 
-                             loading="lazy">
-                        <div class="card-header">
-                            <h3 class="card-title" style="color: var(--accent);">2. Associations</h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">L'organe de vigilance non-marchande, d'alerte éthique et d'audit indépendant des filières.</p>
-                            <p style="font-weight: 700; color: var(--accent); font-size: 0.88rem; margin-top: auto;">→ Pouvoir Législatif Éthique</p>
-                        </div>
+        <!-- Ambition -->
+        <section class="section" id="ambition" aria-labelledby="ambition-title">
+            <div class="container">
+                <article class="feature">
+                    <div class="feature__media">
+                        <picture>
+                            <source type="image/webp" srcset="assets/imgs/illustration-devise-fondateur-800.webp 800w, assets/imgs/illustration-devise-fondateur.webp 1376w" sizes="(max-width: 860px) 100vw, 50vw">
+                            <img src="assets/imgs/illustration-devise-fondateur.jpg" width="1376" height="768" alt="Médaillon doré et émeraude : trois anneaux entrelacés autour d'une flamme, symbole de la pensée, de la parole et de l'action alignées." loading="lazy">
+                        </picture>
                     </div>
-
-                    <!-- Force 3 Card -->
-                    <div class="card">
-                        <img src="assets/imgs/card-pilier-entrepreneurial.jpg" 
-                             alt="[FORMAT: 16:9] [STYLE: High-Tech Eco Bio-Lab Photography] [PROMPT: The Entrepreneurial Pillar: Eco-engineers in a cutting-edge regenerative bio-lab testing organic nutrient solutions]" 
-                             class="card-img-top" 
-                             loading="lazy">
-                        <div class="card-header">
-                            <h3 class="card-title">3. Entreprises</h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Le génie productif régénératif, récompensé par la prospérité pour chaque écosystème bonifié.</p>
-                            <p style="font-weight: 700; color: var(--primary); font-size: 0.88rem; margin-top: auto;">→ Pouvoir Judiciaire de Marché</p>
-                        </div>
+                    <div class="feature__body">
+                        <span class="eyebrow eyebrow--gold">Notre ambition</span>
+                        <h2 id="ambition-title">Faire de la régénération de la planète le modèle économique le plus performant.</h2>
+                        <p class="lead">Pas simplement ralentir la destruction. Changer les règles du jeu.</p>
+                        <blockquote class="callout">
+                            <p>« À ceux qui pensent ce qu'ils disent, disent ce qu'ils pensent, et font ce qu'ils disent. »</p>
+                            <cite>Le pacte d'intégrité GREENWAR</cite>
+                        </blockquote>
                     </div>
+                </article>
+            </div>
+        </section>
 
-                    <!-- Force 4 Card -->
-                    <div class="card">
-                        <img src="assets/imgs/card-pilier-etatique.jpg" 
-                             alt="[FORMAT: 16:9] [STYLE: Transparent Sunlit Parliament Photography] [PROMPT: The Étatique Pillar: Modern timber and marble civic sovereignty parliament hall]" 
-                             class="card-img-top" 
-                             loading="lazy">
-                        <div class="card-header">
-                            <h3 class="card-title" style="color: var(--accent);">4. États & Nations</h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Le garant impartial de la souveraineté, de la justice d'arbitrage et du maintien des biens communs.</p>
-                            <p style="font-weight: 700; color: var(--accent); font-size: 0.88rem; margin-top: auto;">→ Pouvoir Médiatique Libre</p>
-                        </div>
+        <!-- CTA -->
+        <section class="section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-band">
+                    <div>
+                        <h2 id="cta-title">Rejoindre le mouvement</h2>
+                        <p>Citoyen, association, entreprise ou institution : GREENWAR est ouverte à toutes celles et ceux qui veulent produire, entreprendre et s'enrichir en bonifiant le vivant.</p>
+                    </div>
+                    <div class="btn-row">
+                        <a href="action-symbiosique.html#rejoindre" class="btn btn--primary">Comment agir</a>
+                        <a href="mailto:contact@greenwar.org" class="btn btn--ghost">Nous écrire</a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Section 5 : Notre Ambition & La Devise -->
-            <section class="story-split" style="margin: 3rem 0; border-color: var(--accent);">
-                <div class="story-media">
-                    <img src="assets/imgs/illustration-devise-fondateur.jpg" 
-                         alt="[FORMAT: 16:9, Ultra-High Definition 8k] [STYLE: Sacred Philosophical Symbolism / Gold & Emerald Illuminated Manuscript] [PROMPT: An epic illuminated visual medallion symbolizing the triad of human integrity: Mind, Speech, and Action]" 
-                         loading="lazy">
-                    <details class="story-prompt-details">
-                        <summary>🔍 Inspecter le prompt de l'image</summary>
-                        <div class="prompt-content">
-                            <strong>Prompt :</strong> Illuminated medallion of human integrity with eternal flame and sacred motto.
-                        </div>
-                    </details>
-                </div>
-                <div class="story-text">
-                    <span class="story-badge" style="border-color: var(--accent); color: var(--accent); background: rgba(255, 213, 79, 0.1);">Notre Ambition</span>
-                    <h3 style="font-size: 1.7rem; color: #fff;">
-                        Faire de la régénération de la planète le modèle économique le plus performant.
-                    </h3>
-                    <p class="lead" style="color: var(--accent);">
-                        Pas simplement ralentir la destruction.<br>
-                        <strong>Changer les règles du jeu.</strong>
-                    </p>
-                    <hr style="border: 0; height: 1px; background: var(--border-color); margin: 0.5rem 0;">
-                    <blockquote style="margin: 0; font-family: var(--font-serif); font-size: 1.15rem; font-style: italic; color: var(--text-color);">
-                        « À ceux qui pensent ce qu’ils disent, disent ce qu’ils pensent, et font ce qu’ils disent. »
-                    </blockquote>
-                    <p style="color: var(--primary); font-weight: 700; font-size: 0.92rem; margin: 0;">
-                        — Le Pacte d'Intégrité GREENWAR ASBL —
-                    </p>
-                </div>
-            </section>
-
-        </div>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-col">
-                <div class="brand-wrapper" style="margin-bottom: 1rem;">
-                    <img src="assets/imgs/logo_greenwar.jpg" alt="Logo GREENWAR" class="brand-logo" width="42" height="42">
-                    <span class="brand-name" style="font-size: 1.1rem;">GREENWAR ASBL</span>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <img src="assets/imgs/logo-mark.png" alt="" class="brand__logo" width="42" height="42">
+                        <span><span class="brand__name">GREENWAR ASBL</span></span>
+                    </a>
+                    <p>Association sans but lucratif œuvrant pour l'émancipation des Citoyens-Consommateurs, l'économie symbiosique et la régénération planétaire intégrale.</p>
+                    <p class="muted">Bruxelles &amp; Wallonie, Belgique</p>
                 </div>
-                <p>
-                    Association sans but lucratif œuvrant pour l'émancipation des Citoyens-Consommateurs, l'économie symbiosique et la régénération planétaire intégrale.
-                </p>
-                <p style="color: var(--accent); font-weight: 600;">
-                    Bruxelles & Wallonie, Belgique.
-                </p>
+                <div class="footer-col">
+                    <h4>Le site</h4>
+                    <ul>
+                        <li><a href="index.html">La mission</a></li>
+                        <li><a href="analyse-des-piliers.html">Le diagnostic</a></li>
+                        <li><a href="action-symbiosique.html">Solutions &amp; action</a></li>
+                        <li><a href="galerie-illustrations.html">Galerie des illustrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Thèmes</h4>
+                    <ul>
+                        <li><a href="index.html#symbiose">Développement symbiosique</a></li>
+                        <li><a href="index.html#forces">Les quatre forces</a></li>
+                        <li><a href="analyse-des-piliers.html#conquetes">Les trois conquêtes</a></li>
+                        <li><a href="action-symbiosique.html#filieres">Filières &amp; traçabilité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@greenwar.org">contact@greenwar.org</a></li>
+                        <li><a href="action-symbiosique.html#rejoindre">Rejoindre l'ASBL</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="footer-col">
-                <h4>Navigation</h4>
-                <ul>
-                    <li><a href="index.html">La Vision & Mission</a></li>
-                    <li><a href="analyse-des-piliers.html">Critique des 3 Piliers</a></li>
-                    <li><a href="action-symbiosique.html">L'Arme Citoyenne & Actions</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>© 2026 GREENWAR ASBL — Protecting life. Regenerating tomorrow.</p>
+                <p>Site conçu pour l'accessibilité : contraste élevé, taille du texte et lecture vocale via le bouton en bas à droite.</p>
             </div>
-
-            <div class="footer-col">
-                <h4>Filières & Traçabilité</h4>
-                <ul>
-                    <li><a href="action-symbiosique.html#biotech">Biotechnologie Symbiosique</a></li>
-                    <li><a href="action-symbiosique.html#adhesion">Rejoindre l'ASBL</a></li>
-                    <li><a href="analyse-des-piliers.html#conquetes">Les 3 Conquêtes</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 GREENWAR ASBL. Tous droits réservés. Version autonome hors-ligne.</p>
-            <p>Conforme aux normes d'accessibilité numérique WCAG 2.1 AAA.</p>
         </div>
     </footer>
 
-    <!-- Core Script -->
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js" defer></script>
 </body>
 </html>

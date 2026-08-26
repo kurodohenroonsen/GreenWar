@@ -2,262 +2,506 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GREENWAR - Galerie Complète des Illustrations & Captures</title>
-    <link rel="icon" type="image/jpeg" href="assets/imgs/logo_greenwar.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galerie des illustrations | GREENWAR ASBL</title>
+    <meta name="description" content="Toutes les illustrations du site GREENWAR ASBL avec leur prompt de génération.">
+    <meta name="theme-color" content="#0b100e">
+    <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+    <link rel="apple-touch-icon" href="assets/imgs/logo-mark.png">
+    <script>try{var t=localStorage.getItem("gw-theme");if(t&&t!=="dark")document.documentElement.setAttribute("data-theme",t);var s=localStorage.getItem("gw-font-scale");if(s)document.documentElement.style.setProperty("--font-scale",s);}catch(e){}</script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .gallery-wrap {
-            max-width: 1300px;
-            margin: 0 auto;
-            padding: 2.5rem 1.5rem;
-        }
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        .art-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            display: flex;
-            flex-direction: column;
-            transition: var(--transition);
-        }
-        .art-card:hover {
-            border-color: var(--primary);
-            box-shadow: var(--shadow-hover);
-        }
-        .art-card-img {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            background: #000;
-            overflow: hidden;
-        }
-        .art-card-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.4s ease;
-        }
-        .art-card-img:hover img {
-            transform: scale(1.03);
-        }
-        .art-card-body {
-            padding: 1.4rem;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
-        }
-        .badge-pill {
-            display: inline-block;
-            padding: 0.25rem 0.7rem;
-            background: rgba(46, 213, 115, 0.12);
-            border: 1px solid var(--primary);
-            color: var(--primary);
-            border-radius: 999px;
-            font-size: 0.75rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            align-self: flex-start;
-        }
-    </style>
+
+    <meta name="robots" content="noindex">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GREENWAR ASBL">
+    <meta property="og:title" content="Galerie des illustrations — GREENWAR ASBL">
+    <meta property="og:description" content="Toutes les illustrations du site avec leur prompt de génération.">
+    <meta property="og:image" content="assets/imgs/illustration-genese-croissance.jpg">
+    <meta property="og:locale" content="fr_BE">
 </head>
 <body>
 
-    <header class="site-header" style="position: relative;">
-        <div class="nav-container">
-            <a class="brand-wrapper" href="index.html">
-                <img src="assets/imgs/logo_greenwar.jpg" alt="Logo GREENWAR" class="brand-logo" width="48" height="48">
-                <div class="brand-titles">
-                    <span class="brand-name">GREENWAR ASBL</span>
-                    <span class="brand-tagline">Galerie des Illustrations</span>
-                </div>
+    <a href="#main-content" class="skip-link">Aller au contenu</a>
+
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html" aria-label="GREENWAR ASBL — accueil">
+                <img src="assets/imgs/logo-mark.png" alt="" class="brand__logo" width="42" height="42">
+                <span>
+                    <span class="brand__name">GREENWAR</span>
+                    <span class="brand__tagline">Protecting life. Regenerating tomorrow.</span>
+                </span>
             </a>
-            <a href="index.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">← Retour au site</a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu">
+                <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
+
+            <nav id="primary-nav" class="nav" aria-label="Navigation principale">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="index.html">La mission</a></li>
+                    <li><a class="nav__link" href="analyse-des-piliers.html">Le diagnostic</a></li>
+                    <li><a class="nav__link" href="action-symbiosique.html">Solutions &amp; action</a></li>
+                </ul>
+                <a class="btn btn--primary btn--sm nav__cta" href="action-symbiosique.html#rejoindre">Nous rejoindre</a>
+            </nav>
         </div>
     </header>
 
-    <main class="gallery-wrap">
-        <div class="title-card">
-            <h2>Galerie Intégrale des Illustrations & Prompts Artistiques</h2>
-            <span class="title-badge">19 Illustrations Haute Fidélité</span>
-        </div>
-        <p class="lead">
-            Chaque visuel a été spécialement conçu pour matérialiser le manifeste philosophique, la critique des 3 piliers et l'avènement de l'économie symbiosique.
-        </p>
-
-        <div class="gallery-grid">
-            
-            <!-- Item 1 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-terre-symbiosique.jpg" alt="Terre Symbiosique">
-                </div>
-                <div class="art-card-body">
-                    <span class="badge-pill">Page 1 : La Mission</span>
-                    <h3 style="font-size: 1.15rem; color: var(--accent); margin: 0;">1. Les 510.065.000 km² Protégés</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Allégorie orbitale de la Terre protégée par des anneaux de biosphère et de biotechnologie régénérative.</p>
+    <main id="main-content" tabindex="-1">
+        <section class="page-hero" aria-labelledby="hero-title">
+            <div class="container page-hero__inner page-hero__inner--single">
+                <div class="page-hero__text">
+                    <span class="eyebrow eyebrow--gold">Coulisses</span>
+                    <h1 id="hero-title">Galerie des illustrations</h1>
+                    <p class="lead">Les 23 visuels du site, conçus pour matérialiser le manifeste, le diagnostic des trois piliers et l'économie symbiosique. Chaque image est accompagnée de son prompt de génération.</p>
                 </div>
             </div>
-
-            <!-- Item 2 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-deux-mondes.jpg" alt="Deux Mondes">
+        </section>
+        <section class="section" aria-label="Illustrations">
+            <div class="container">
+                <div class="gallery-grid">
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-terre-symbiosique-800.webp 800w, assets/imgs/illustration-terre-symbiosique.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-terre-symbiosique.jpg" width="1376" height="768" alt="Les 510 065 000 km² protégés" loading="lazy">
+                    </picture>
                 </div>
-                <div class="art-card-body">
-                    <span class="badge-pill">Page 1 : La Mission</span>
-                    <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0;">2. Deux Civilisations & Deux Organisations</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Dualité entre les 195 nations étatiques occidentalisées et les zones de subsistance non-occidentalisées.</p>
+                <div class="card__body">
+                    <span class="tag ">La mission</span>
+                    <h3>01. Les 510 065 000 km² protégés</h3>
+                    <p>Allégorie orbitale de la Terre protégée par des anneaux de biosphère régénérative.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>Wide cinematic shot of planet Earth seen from orbit, where the entire 510,065,000 square kilometers surface is protected by glowing biospheric energy rings in vibrant emerald green and warm liquid gold. The continents pulse with hyper-connected ecological networks, thriving biodomes, lush reforested canopies, and regenerative biotechnology hubs. High-tech subtle holographic overlays depict living carbon cycle loops and zero-entropy closed-loop cycles. Dramatic side lighting from a rising sun, deep dark celestial background with distant nebula, volumetric lighting, photorealistic textures, Unreal Engine 5 aesthetic, 8k resolution.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-deux-mondes-800.webp 800w, assets/imgs/illustration-deux-mondes.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-deux-mondes.jpg" width="1376" height="768" alt="Deux civilisations" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">La mission</span>
+                    <h3>02. Deux civilisations</h3>
+                    <p>Dualité entre les capitales occidentalisées et les zones d&#x27;extraction non-occidentalisées.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>A wide widescreen conceptual illustration representing the world at the dawn of the third millennium divided into two civilizations: on one side, affluent western state capitals with monolithic parliamentary domes and automated glass corporate skyscrapers; on the other side, non-western resource-rich lands marked by ecological extraction and vulnerable communities. In the sky above, a glowing interconnected web of 8 billion golden human silhouettes represents the global Consumer-Citizens rising to bridge the divide. Atmospheric lighting, rich contrasting emerald green, deep charcoal and vibrant gold accents, 8k resolution.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-trois-fleaux-detail-800.webp 800w, assets/imgs/illustration-trois-fleaux-detail.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-trois-fleaux-detail.jpg" width="1376" height="768" alt="Les trois fléaux" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">La mission</span>
+                    <h3>03. Les trois fléaux</h3>
+                    <p>Guerre, famine et banditisme.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>A powerful allegorical triptych detailing the three human plagues ravaging non-westernized nations: 1. War, 2. Famine, 3. Banditry under geopolitical extraction conditions. Dark atmospheric allegory, triptych narrative art, 8k.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-quest-economique-800.webp 800w, assets/imgs/illustration-quest-economique.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-quest-economique.jpg" width="1376" height="768" alt="La quête symbiosique" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">La mission</span>
+                    <h3>04. La quête symbiosique</h3>
+                    <p>Produire pour s&#x27;enrichir en développant somptueusement la planète.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>A magnificent circular visual representation of the Absolute Symbiosic Quest of GREENWAR: in the center, a luminous celestial biosphere surrounded by four golden rings representing Zero Exploitation, Eco-Aligned Profits, Closed-Loop Bioremediation, and P2P Transparency. Glowing green energy pulses flow from the center into revitalized rivers, biodiverse agro-forestry belts, and sustainable community biomanufacturing hubs. Warm golden ray lighting, futuristic clean aesthetic, photorealistic, 8k resolution.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-arme-citoyenne-800.webp 800w, assets/imgs/illustration-arme-citoyenne.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-arme-citoyenne.jpg" width="1376" height="768" alt="L&#x27;arme des 8 milliards" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">La mission · Solutions</span>
+                    <h3>05. L&#x27;arme des 8 milliards</h3>
+                    <p>Le pouvoir souverain de l&#x27;achat éclairé.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>A high-concept visual metaphor depicting the economic liberation of 8 billion citizens: In the center, a gigantic translucent golden shield inscribed with glowing mathematical and ecological vectors radiates over a vibrant blue-green Earth. From the hands of diverse people around the world, beams of green and gold light converge onto the shield, deflecting dark extractive industrial gears while channeling pure revitalizing energy into depleted rivers and forests. Cinematic perspective, lens flare, volumetric rays, Unreal Engine 5 render, 8k resolution.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-quatre-piliers-800.webp 800w, assets/imgs/illustration-quatre-piliers.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-quatre-piliers.jpg" width="1376" height="768" alt="Les quatre piliers de société" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag tag--gold">Non utilisée</span>
+                    <h3>06. Les quatre piliers de société</h3>
+                    <p>Familial, associatif, entrepreneurial, étatique et leurs quatre pouvoirs.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>Monumental architectural visualization of four grand crystal and living-flora pillars supporting a luminous spherical ecosystem representing humanity. The four pillars are labeled with glowing runes: 1. Familial, 2. Associatif, 3. Entrepreneurial, 4. Étatique. Above them hover the four symbiotic powers: Executive, Legislative, Judicial, and Media. Rays of dawn light cut through morning mist, serene reflection pool in the foreground, breathtaking scale, photorealistic architectural photography, Unreal Engine 5 render, 8k.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/card-pilier-familial-800.webp 800w, assets/imgs/card-pilier-familial.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/card-pilier-familial.jpg" width="1376" height="768" alt="Citoyens &amp; familles" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">La mission</span>
+                    <h3>07. Citoyens &amp; familles</h3>
+                    <p>Le pilier familial.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>The Familial Pillar: A multi-generational family sitting together around a glowing hearth surrounded by living vines, transmitting ancient wisdom. Warm cozy hearth photography, 16:9.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/card-pilier-associatif-800.webp 800w, assets/imgs/card-pilier-associatif.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/card-pilier-associatif.jpg" width="1376" height="768" alt="Associations" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">La mission</span>
+                    <h3>08. Associations</h3>
+                    <p>Le pilier associatif.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>The Associatif Pillar: Citizens, legal volunteers and ecological auditors in a community workshop. Sunlit civic workshop photography, 16:9.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/card-pilier-entrepreneurial-800.webp 800w, assets/imgs/card-pilier-entrepreneurial.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/card-pilier-entrepreneurial.jpg" width="1376" height="768" alt="Entreprises" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">La mission</span>
+                    <h3>09. Entreprises</h3>
+                    <p>Le pilier entrepreneurial.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>The Entrepreneurial Pillar: Eco-engineers in a cutting-edge regenerative bio-lab testing organic nutrient solutions. High-tech eco bio-lab photography, 16:9.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/card-pilier-etatique-800.webp 800w, assets/imgs/card-pilier-etatique.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/card-pilier-etatique.jpg" width="1376" height="768" alt="États &amp; nations" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">La mission</span>
+                    <h3>10. États &amp; nations</h3>
+                    <p>Le pilier étatique.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>The Étatique Pillar: Modern timber and marble civic sovereignty parliament hall. Transparent sunlit parliament photography, 16:9.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-devise-fondateur-800.webp 800w, assets/imgs/illustration-devise-fondateur.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-devise-fondateur.jpg" width="1376" height="768" alt="Le pacte d&#x27;intégrité" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">La mission</span>
+                    <h3>11. Le pacte d&#x27;intégrité</h3>
+                    <p>Pensée, parole et action alignées.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>An epic illuminated visual medallion symbolizing the triad of human integrity: Mind, Speech, and Action. Sacred philosophical symbolism, gold &amp; emerald illuminated manuscript style, 8k.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-genese-croissance-800.webp 800w, assets/imgs/illustration-genese-croissance.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-genese-croissance.jpg" width="1376" height="768" alt="La genèse d&#x27;après-guerre" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag tag--red">Le diagnostic</span>
+                    <h3>12. La genèse d&#x27;après-guerre</h3>
+                    <p>Peur de la raréfaction des ressources et de la pollution irréversible.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>A panoramic historical visualization of the post-WWII economic growth era: massive smoking industrial blast furnaces and assembly lines contrasting with early international diplomatic summits drafting sustainable development treaties. In the foreground, two impending global crises are symbolized: on one side, depleted resource quarries with empty conveyor belts; on the other, dark smog layers settling over pristine green valleys. Deep sepia and bronze tones with glowing amber light rays, photorealistic period textures, cinematic composition, 8k resolution.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/card-pilier-economique-critique-800.webp 800w, assets/imgs/card-pilier-economique-critique.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/card-pilier-economique-critique.jpg" width="1376" height="768" alt="Le pilier économique" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag tag--red">Le diagnostic</span>
+                    <h3>13. Le pilier économique</h3>
+                    <p>La rentabilité comme unique objectif.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>Critique of the Economic Pillar: Boardroom executives watching real-time stock profit tickers while factory smokestacks billow outside. Dark boardroom photography, 16:9.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/card-pilier-associatif-critique-800.webp 800w, assets/imgs/card-pilier-associatif-critique.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/card-pilier-associatif-critique.jpg" width="1376" height="768" alt="Le pilier associatif" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag tag--red">Le diagnostic</span>
+                    <h3>14. Le pilier associatif</h3>
+                    <p>Survie et renom comme uniques objectifs.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>Critique of the Associatif Pillar: Oversized corporate subsidy check delivered under flashing press cameras. Charity check presentation photography, 16:9.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/card-pilier-environnemental-critique-800.webp 800w, assets/imgs/card-pilier-environnemental-critique.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/card-pilier-environnemental-critique.jpg" width="1376" height="768" alt="Le pilier environnemental" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag tag--red">Le diagnostic</span>
+                    <h3>15. Le pilier environnemental</h3>
+                    <p>Le déficit reporté sur le Citoyen-Consommateur.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>Critique of the Environnemental Pillar: Anxious household consumer examining green carbon tax statements at a kitchen table. Carbon tax burden photography, 16:9.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-trois-conquetes-800.webp 800w, assets/imgs/illustration-trois-conquetes.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-trois-conquetes.jpg" width="1376" height="768" alt="Les trois conquêtes" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag tag--red">Le diagnostic</span>
+                    <h3>16. Les trois conquêtes</h3>
+                    <p>Argent, pouvoir, gloire.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>A monumental allegorical triptych representing the Three False Conquests of modern sustainable development: 1. The Conquest of Money (a towering golden banking obelisk rising above smoky mega-factories and depleted quarries), 2. The Conquest of Power (a grand neoclassical parliament hall bathed in dramatic purple and amber spotlighting where bureaucratic statutes and carbon tax treaties are signed), 3. The Conquest of Glory (a gleaming crystal philanthropic gala hall where awards are handed out against a backdrop of subsidized brochures). Golden light rays juxtaposed against somber shadows, hyper-detailed rendering, epic cinematic atmosphere, Rembrandt lighting, 8k resolution.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-chaine-surproduction-800.webp 800w, assets/imgs/illustration-chaine-surproduction.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-chaine-surproduction.jpg" width="1376" height="768" alt="La chaîne invisible de la surproduction" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag tag--red">Le diagnostic</span>
+                    <h3>17. La chaîne invisible de la surproduction</h3>
+                    <p>Manufactures clandestines et vitrines festives.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>A powerful split composition depicting the invisible supply chain of global overproduction: On the left, inside a dark, humid, poorly lit underground sweatshop filled with raw plastic vapors, exhausted young factory workers assemble plastic toy castles under harsh industrial fluorescent light. On the right, a radiant, festive, beautifully decorated European Christmas department store with warm golden fairy lights, where joyful affluent families place the same packaged toy castles into shopping carts under promotional signs. A faint ghostly conveyor belt connects the two worlds across the divide. Highly emotional, cinematic depth of field, award-winning photojournalism style, 8k render.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/card-boycott-achat-800.webp 800w, assets/imgs/card-boycott-achat.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/card-boycott-achat.jpg" width="1376" height="768" alt="Le boycott &amp; l&#x27;achat choisi" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">Solutions</span>
+                    <h3>18. Le boycott &amp; l&#x27;achat choisi</h3>
+                    <p>Vérifier avant d&#x27;acheter.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>An empowered consumer in a modern eco-market using a smartphone interface to scan and verify the zero-exploitation certificate of organic produce. Empowered consumer photography, 16:9.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/card-biotech-sol-vivant-800.webp 800w, assets/imgs/card-biotech-sol-vivant.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/card-biotech-sol-vivant.jpg" width="1376" height="768" alt="Le sol vivant" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">Solutions</span>
+                    <h3>19. Le sol vivant</h3>
+                    <p>Restaurer le vivant.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>Macro photograph of living soil: roots, seedlings, an earthworm and mycelium in dark humus, warm natural light, 16:9.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-sarcomusation-larves-800.webp 800w, assets/imgs/illustration-sarcomusation-larves.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-sarcomusation-larves.jpg" width="1376" height="768" alt="Sarcomusation &amp; Hermetia illucens" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">Solutions</span>
+                    <h3>20. Sarcomusation &amp; Hermetia illucens</h3>
+                    <p>Biodégradation totale en 72 heures.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>A detailed cutaway scientific visualization of an automated eco-bioreactor utilizing Hermetia illucens (Black Soldier Fly) larvae: illuminated glass chambers where millions of larvae rapidly bio-convert organic matter in 72 hours under warm ultraviolet light. Output chutes separate clean insect protein meal and nutrient-dense living frass fertilizer. Prominently displayed is a glowing digital safety monitor showing strict Anti-Prion compliance (Method 1 sterilization: 133°C, 3 bars, 20 minutes). High-tech laboratory aesthetic, clean emerald green and amber illumination, photorealistic 8k render.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-tracabilite-crypto-800.webp 800w, assets/imgs/illustration-tracabilite-crypto.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-tracabilite-crypto.jpg" width="1376" height="768" alt="Traçabilité cryptographique Ed25519" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">Solutions</span>
+                    <h3>21. Traçabilité cryptographique Ed25519</h3>
+                    <p>Contrôle direct par smartphone.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>A futuristic holographic network visualization of decentralized P2P cryptographic traceability (Ed25519 / AeterniTrak): A four-stage illuminated pipeline showing 1. Ranger NFC Badge &amp; GPS logging, 2. Automated LFA / PCR rapid screening for contaminants and Pentobarbital, 3. Certified Method 1 thermal sterilization (133°C, 3 bars), 4. Immutable Ed25519 cryptographic signature block sealing the batch history. In the foreground, a smartphone camera displays an instant green verifiable authenticity seal. Clean cyber-emerald and liquid gold neon lighting, photorealistic UI overlays, 8k resolution.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/illustration-biotech-regeneratrice-800.webp 800w, assets/imgs/illustration-biotech-regeneratrice.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/illustration-biotech-regeneratrice.jpg" width="1376" height="768" alt="Le hub bio-agro-industriel" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">Solutions</span>
+                    <h3>22. Le hub bio-agro-industriel</h3>
+                    <p>Boucle fermée zéro déchet.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>Futuristic isometric architectural concept of a zero-waste closed-loop bio-refinery and eco-agricultural hub: Automated vertical biodigesters powered by Hermetia illucens black soldier fly larvae breaking down organic matter, interconnected with aeroponic greenhouses, micro-algae photobioreactors, and solar canopies. Transparent glass tubes carry nutrient streams between bio-reactors and fertile re-wilded soil plots. Golden morning sunlight, lush vegetation, clean industrial design, architectural masterplan visualization, photorealistic, 8k.</pre>
+                    </details>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__media">
+                    <picture>
+                        <source type="image/webp" srcset="assets/imgs/card-engagement-asbl-800.webp 800w, assets/imgs/card-engagement-asbl.webp 1376w" sizes="(max-width: 860px) 100vw, 33vw">
+                        <img src="assets/imgs/card-engagement-asbl.jpg" width="1376" height="768" alt="Rejoindre l&#x27;ASBL" loading="lazy">
+                    </picture>
+                </div>
+                <div class="card__body">
+                    <span class="tag ">Solutions</span>
+                    <h3>23. Rejoindre l&#x27;ASBL</h3>
+                    <p>La charte d&#x27;action indépendante.</p>
+                    <details class="prompt">
+                        <summary>Prompt de génération</summary>
+                        <pre>A heroic cinematic group portrait of GREENWAR ASBL team: Scientists, legal advocates, ethical farmers and engaged citizens holding an emerald shield emblem in a reforested landscape at sunset. Heroic group portrait photography, 16:9.</pre>
+                    </details>
+                </div>
+            </article>
                 </div>
             </div>
-
-            <!-- Item 3 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-trois-fleaux-detail.jpg" alt="Trois Fléaux">
-                </div>
-                <div class="art-card-body">
-                    <span class="badge-pill" style="border-color: var(--danger); color: var(--danger);">Page 1 : La Mission</span>
-                    <h3 style="font-size: 1.15rem; color: var(--danger); margin: 0;">3. Les 3 Fléaux Humains Détaillés</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Guerre, Famine et Banditisme : les 3 ravages de l'ingérence géopolitique sélective.</p>
-                </div>
-            </div>
-
-            <!-- Item 4 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-quest-economique.jpg" alt="Quête Économique">
-                </div>
-                <div class="art-card-body">
-                    <span class="badge-pill">Page 1 : La Mission</span>
-                    <h3 style="font-size: 1.15rem; color: var(--accent); margin: 0;">4. L'Absolue Quête Économique</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Produire pour s'enrichir en développant somptueusement la planète sans exploitation.</p>
-                </div>
-            </div>
-
-            <!-- Item 5 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-quatre-piliers.jpg" alt="Quatre Piliers">
-                </div>
-                <div class="art-card-body">
-                    <span class="badge-pill">Page 1 : La Mission</span>
-                    <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0;">5. Les 4 Nouveaux Piliers de Société</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Familial, Associatif, Entrepreneurial, Étatique et leurs 4 Pouvoirs rééquilibrés.</p>
-                </div>
-            </div>
-
-            <!-- Item 6 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-devise-fondateur.jpg" alt="Devise du Fondateur">
-                </div>
-                <div class="art-card-body">
-                    <span class="badge-pill">Page 1 & 2 : Philosophie</span>
-                    <h3 style="font-size: 1.15rem; color: var(--accent); margin: 0;">6. La Devise Sacrée d'Intégrité</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">L'alignement pur de la Pensée, de la Parole et de l'Action.</p>
-                </div>
-            </div>
-
-            <!-- Item 7 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-genese-croissance.jpg" alt="Genèse Croissance">
-                </div>
-                <div class="art-card-body">
-                    <span class="badge-pill">Page 2 : Critique</span>
-                    <h3 style="font-size: 1.15rem; color: var(--accent); margin: 0;">7. La Genèse d'Après-Guerre</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Peur de la raréfaction des ressources et de la pollution atmosphérique irréversible.</p>
-                </div>
-            </div>
-
-            <!-- Item 8 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-trois-conquetes.jpg" alt="Trois Conquêtes">
-                </div>
-                <div class="art-card-body">
-                    <span class="badge-pill" style="border-color: var(--danger); color: var(--danger);">Page 2 : Critique</span>
-                    <h3 style="font-size: 1.15rem; color: var(--danger); margin: 0;">8. Les 3 Conquêtes : Argent, Pouvoir, Gloire</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Comment les 3 piliers conventionnels ravagent la planète sous couvert de légalité.</p>
-                </div>
-            </div>
-
-            <!-- Item 9 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-chaine-surproduction.jpg" alt="Chaîne Surproduction">
-                </div>
-                <div class="art-card-body">
-                    <span class="badge-pill" style="border-color: var(--danger); color: var(--danger);">Page 2 : Critique</span>
-                    <h3 style="font-size: 1.15rem; color: var(--danger); margin: 0;">9. La Chaîne de Surproduction & Enfants</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Le contraste tragique entre manufactures clandestines et vitrines de jouets festives.</p>
-                </div>
-            </div>
-
-            <!-- Item 10 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-arme-citoyenne.jpg" alt="Arme Citoyenne">
-                </div>
-                <div class="art-card-body">
-                    <span class="badge-pill">Page 3 : Actions</span>
-                    <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0;">10. L'Arme des 8 Milliards de Citoyens</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Le pouvoir souverain de l'achat éclairé pour fermer les filières indignes.</p>
-                </div>
-            </div>
-
-            <!-- Item 11 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-sarcomusation-larves.jpg" alt="Sarcomusation">
-                </div>
-                <div class="art-card-body">
-                    <span class="badge-pill">Page 3 : Actions</span>
-                    <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0;">11. Sarcomusation & Hermetia Illucens</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Biodégradation 100% propre, protéines, bio-fertilisants et règle d'or anti-prion.</p>
-                </div>
-            </div>
-
-            <!-- Item 12 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-tracabilite-crypto.jpg" alt="Traçabilité Cryptographique">
-                </div>
-                <div class="art-card-body">
-                    <span class="badge-pill">Page 3 : Actions</span>
-                    <h3 style="font-size: 1.15rem; color: var(--accent); margin: 0;">12. Traçabilité Cryptographique Ed25519</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Contrôle direct par smartphone du consommateur, garantissant l'authenticité absolue.</p>
-                </div>
-            </div>
-
-            <!-- Item 13 -->
-            <div class="art-card">
-                <div class="art-card-img">
-                    <img src="assets/imgs/illustration-biotech-regeneratrice.jpg" alt="Biotech Régénératrice">
-                </div>
-                <div class="art-card-body">
-                    <span class="badge-pill">Page 3 : Actions</span>
-                    <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0;">13. Hub Isométrique Bio-Agro-Industriel</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Architecture futuriste solarpunk à boucle fermée zéro déchet.</p>
-                </div>
-            </div>
-
-        </div>
+        </section>
     </main>
 
     <footer class="site-footer">
-        <div class="footer-bottom">
-            <p>&copy; 2026 GREENWAR ASBL. Tous droits réservés.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <img src="assets/imgs/logo-mark.png" alt="" class="brand__logo" width="42" height="42">
+                        <span><span class="brand__name">GREENWAR ASBL</span></span>
+                    </a>
+                    <p>Association sans but lucratif œuvrant pour l'émancipation des Citoyens-Consommateurs, l'économie symbiosique et la régénération planétaire intégrale.</p>
+                    <p class="muted">Bruxelles &amp; Wallonie, Belgique</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Le site</h4>
+                    <ul>
+                        <li><a href="index.html">La mission</a></li>
+                        <li><a href="analyse-des-piliers.html">Le diagnostic</a></li>
+                        <li><a href="action-symbiosique.html">Solutions &amp; action</a></li>
+                        <li><a href="galerie-illustrations.html">Galerie des illustrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Thèmes</h4>
+                    <ul>
+                        <li><a href="index.html#symbiose">Développement symbiosique</a></li>
+                        <li><a href="index.html#forces">Les quatre forces</a></li>
+                        <li><a href="analyse-des-piliers.html#conquetes">Les trois conquêtes</a></li>
+                        <li><a href="action-symbiosique.html#filieres">Filières &amp; traçabilité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@greenwar.org">contact@greenwar.org</a></li>
+                        <li><a href="action-symbiosique.html#rejoindre">Rejoindre l'ASBL</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 GREENWAR ASBL — Protecting life. Regenerating tomorrow.</p>
+                <p>Site conçu pour l'accessibilité : contraste élevé, taille du texte et lecture vocale via le bouton en bas à droite.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="assets/js/app.js" defer></script>
 </body>
 </html>
