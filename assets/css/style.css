@@ -736,37 +736,38 @@ main { flex: 1 0 auto; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--color-text, #ffffff);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--line-strong);
   border-radius: 9999px;
   padding: 6px 14px;
   font-size: 0.85rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
-  backdrop-filter: blur(10px);
 }
 .lang-btn:hover, .lang-btn:focus-visible {
-  background: rgba(46, 204, 113, 0.2);
-  border-color: #2ecc71;
+  background: var(--green-soft);
+  border-color: var(--green);
+  color: var(--green);
   outline: none;
 }
 .lang-dropdown {
   position: absolute;
   top: calc(100% + 8px);
   right: 0;
-  background: #0d1712;
-  border: 1px solid rgba(46, 204, 113, 0.3);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
   border-radius: 12px;
   padding: 6px;
-  min-width: 155px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  min-width: 165px;
+  box-shadow: var(--shadow-2);
   list-style: none;
   display: none;
   flex-direction: column;
   gap: 2px;
   z-index: 1000;
+  white-space: nowrap;
 }
 .lang-switcher.open .lang-dropdown {
   display: flex;
@@ -776,7 +777,7 @@ main { flex: 1 0 auto; }
   align-items: center;
   gap: 8px;
   padding: 8px 12px;
-  color: #c9d6cf;
+  color: var(--text-2);
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 600;
@@ -784,11 +785,11 @@ main { flex: 1 0 auto; }
   transition: background 0.15s ease, color 0.15s ease;
 }
 .lang-dropdown a:hover {
-  background: rgba(46, 204, 113, 0.15);
-  color: #2ecc71;
+  background: var(--green-soft);
+  color: var(--green);
 }
 .lang-dropdown a.active {
-  background: #2ecc71;
-  color: #06110a;
+  background: var(--green);
+  color: var(--on-green);
   font-weight: 800;
 }
