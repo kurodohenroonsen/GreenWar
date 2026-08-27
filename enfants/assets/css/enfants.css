@@ -199,7 +199,7 @@ main { flex: 1 0 auto; }
   position: relative;
   display: inline-flex;
   align-items: center;
-  margin-left: auto;
+  margin-left: 0.5rem;
 }
 .lang-btn {
   display: inline-flex;
@@ -215,6 +215,7 @@ main { flex: 1 0 auto; }
   cursor: pointer;
   box-shadow: 0 3px 0 #2fb36b;
   transition: transform 0.1s ease;
+  white-space: nowrap;
 }
 .lang-btn:active {
   transform: translateY(2px);
@@ -228,13 +229,14 @@ main { flex: 1 0 auto; }
   border: 2px solid #2fb36b;
   border-radius: 16px;
   padding: 6px;
-  min-width: 160px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  min-width: 165px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   list-style: none;
   display: none;
   flex-direction: column;
   gap: 4px;
   z-index: 1000;
+  white-space: nowrap;
 }
 .lang-switcher.open .lang-dropdown {
   display: flex;
@@ -243,11 +245,21 @@ main { flex: 1 0 auto; }
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 12px;
+  padding: 8px 14px;
   color: #1f3a2c;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 700;
+  border-radius: 10px;
+  transition: background 0.15s ease;
+}
+.lang-dropdown a:hover {
+  background: #eef8f2;
+}
+.lang-dropdown a.active {
+  background: #2fb36b;
+  color: #ffffff;
+}
   border-radius: 10px;
   transition: background 0.15s ease;
 }
