@@ -119,7 +119,11 @@ main { flex: 1 0 auto; }
 .pepin { display: grid; grid-template-columns: 84px 1fr; gap: 1rem; align-items: center; padding: 1rem 1.2rem; background: #fff; border: 3px solid var(--leaf-soft); border-radius: var(--radius); }
 .pepin img { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; background: var(--leaf-soft); }
 .pepin p { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--ink); }
-.pepin p::before { content: "Pépin dit : "; color: var(--leaf); }
+:lang(fr) .pepin p::before { content: "Pépin dit : "; color: var(--leaf); font-weight: 800; }
+:lang(en) .pepin p::before { content: "Pepin says: "; color: var(--leaf); font-weight: 800; }
+:lang(nl) .pepin p::before { content: "Pepin zegt: "; color: var(--leaf); font-weight: 800; }
+:lang(de) .pepin p::before { content: "Pepin sagt: "; color: var(--leaf); font-weight: 800; }
+:lang(ja) .pepin p::before { content: "ペパンより："; color: var(--leaf); font-weight: 800; }
 
 /* ---- Cartes ---- */
 .cards { display: grid; gap: 1.2rem; }
