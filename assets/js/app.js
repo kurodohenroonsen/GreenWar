@@ -8,6 +8,7 @@
 
   var STORAGE_THEME = "gw-theme";
   var STORAGE_SCALE = "gw-font-scale";
+  var STORAGE_STYLE = "gw-img-style";
 
   function store(key, value) {
     try { localStorage.setItem(key, value); } catch (e) { /* stockage indisponible */ }
@@ -22,6 +23,7 @@
       opts: "Options d'accessibilité", title: "Accessibilité", close: "Fermer",
       font: "Taille du texte", dec: "Réduire le texte", reset: "Taille normale", inc: "Agrandir le texte",
       theme: "Thème", dark: "Sombre", light: "Clair", contrast: "Contraste",
+      style: "Style des visuels", scifi: "Futuriste", real: "Réaliste", toon: "3D Zootopia",
       tts: "Lecture vocale", play: "Lire la page", stop: "Arrêter",
       nav_open: "Ouvrir le menu", nav_close: "Fermer le menu"
     },
@@ -29,6 +31,7 @@
       opts: "Accessibility options", title: "Accessibility", close: "Close",
       font: "Text size", dec: "Decrease text", reset: "Normal size", inc: "Increase text",
       theme: "Theme", dark: "Dark", light: "Light", contrast: "High contrast",
+      style: "Visual style", scifi: "Futuristic", real: "Realistic", toon: "3D Zootopia",
       tts: "Text to speech", play: "Read page aloud", stop: "Stop",
       nav_open: "Open menu", nav_close: "Close menu"
     },
@@ -36,6 +39,7 @@
       opts: "Toegankelijkheidsopties", title: "Toegankelijkheid", close: "Sluiten",
       font: "Tekstgrootte", dec: "Tekst verkleinen", reset: "Normale grootte", inc: "Tekst vergroten",
       theme: "Thema", dark: "Donker", light: "Licht", contrast: "Hoog contrast",
+      style: "Visuele stijl", scifi: "Futuristisch", real: "Realistisch", toon: "3D Zootopia",
       tts: "Spraakweergave", play: "Pagina voorlezen", stop: "Stoppen",
       nav_open: "Menu openen", nav_close: "Menu sluiten"
     },
@@ -43,6 +47,7 @@
       opts: "Barrierefreiheitsoptionen", title: "Barrierefreiheit", close: "Schließen",
       font: "Textgröße", dec: "Text verkleinern", reset: "Normalgröße", inc: "Text vergrößern",
       theme: "Design", dark: "Dunkel", light: "Hell", contrast: "Hoher Kontrast",
+      style: "Bildstil", scifi: "Futuristisch", real: "Realistisch", toon: "3D Zootopia",
       tts: "Sprachausgabe", play: "Seite vorlesen", stop: "Stoppen",
       nav_open: "Menü öffnen", nav_close: "Menü schließen"
     },
@@ -50,6 +55,7 @@
       opts: "アクセシビリティ設定", title: "アクセシビリティ", close: "閉じる",
       font: "文字サイズ", dec: "文字を小さく", reset: "標準サイズ", inc: "文字を大きく",
       theme: "テーマ", dark: "ダーク", light: "ライト", contrast: "ハイコントラスト",
+      style: "ビジュアルスタイル", scifi: "SF・未来的", real: "リアル写真", toon: "3D擬人化",
       tts: "音声読み上げ", play: "ページを読み上げる", stop: "停止",
       nav_open: "メニューを開く", nav_close: "メニューを閉じる"
     }
@@ -79,6 +85,60 @@
     });
     window.addEventListener("resize", function () {
       if (window.innerWidth > 860) setOpen(false);
+    });
+  }
+
+  /* ---------- Switcher Style d'Images ---------- */
+  function updateImageSrc(url, style) {
+    if (!url) return url;
+    var is800 = url.indexOf("-800.") !== -1;
+    var extMatch = url.match(/\.(jpg|webp)$/i);
+    if (!extMatch) return url;
+    var ext = extMatch[1];
+
+    // Remove -800 and previous style suffixes from base
+    var base = url.replace(/-800\.(?:jpg|webp)$/i, "")
+                  .replace(/-(?:real|toon)\.(?:jpg|webp)$/i, "")
+                  .replace(/-(?:real|toon)$/i, "")
+                  .replace(/\.(?:jpg|webp)$/i, "");
+
+    if (style === "real") {
+      return base + "-real" + (is800 ? "-800." : ".") + ext;
+    } else if (style === "toon") {
+      return base + "-toon" + (is800 ? "-800." : ".") + ext;
+    } else {
+      return base + (is800 ? "-800." : ".") + ext;
+    }
+  }
+
+  function setImagesStyle(style) {
+    var validStyles = ["scifi", "real", "toon"];
+    if (validStyles.indexOf(style) === -1) style = "scifi";
+    document.documentElement.setAttribute("data-img-style", style);
+    store(STORAGE_STYLE, style);
+
+    document.querySelectorAll("img").forEach(function (img) {
+      var src = img.getAttribute("src");
+      if (src && (src.indexOf("illustration-") !== -1 || src.indexOf("card-") !== -1)) {
+        img.src = updateImageSrc(src, style);
+      }
+    });
+
+    document.querySelectorAll("source").forEach(function (source) {
+      var srcset = source.getAttribute("srcset");
+      if (srcset && (srcset.indexOf("illustration-") !== -1 || srcset.indexOf("card-") !== -1)) {
+        var parts = srcset.split(",").map(function (part) {
+          var trimmed = part.trim();
+          var segs = trimmed.split(/\s+/);
+          segs[0] = updateImageSrc(segs[0], style);
+          return segs.join(" ");
+        });
+        source.srcset = parts.join(", ");
+      }
+    });
+
+    document.querySelectorAll("[data-style]").forEach(function (btn) {
+      btn.classList.toggle("active", btn.dataset.style === style);
     });
   }
 
@@ -112,6 +172,11 @@
       '<button type="button" class="a11y-btn" data-theme="dark">' + a11y_t.dark + '</button>' +
       '<button type="button" class="a11y-btn" data-theme="light">' + a11y_t.light + '</button>' +
       '<button type="button" class="a11y-btn" data-theme="high-contrast">' + a11y_t.contrast + '</button></div></div>' +
+      '<div class="a11y-group"><span class="a11y-group-title" id="a11y-style-label">' + a11y_t.style + '</span>' +
+      '<div class="a11y-buttons" role="group" aria-labelledby="a11y-style-label">' +
+      '<button type="button" class="a11y-btn" data-style="scifi">' + a11y_t.scifi + '</button>' +
+      '<button type="button" class="a11y-btn" data-style="real">' + a11y_t.real + '</button>' +
+      '<button type="button" class="a11y-btn" data-style="toon">' + a11y_t.toon + '</button></div></div>' +
       '<div class="a11y-group" id="a11y-tts"><span class="a11y-group-title" id="a11y-tts-label">' + a11y_t.tts + '</span>' +
       '<div class="a11y-buttons" role="group" aria-labelledby="a11y-tts-label">' +
       '<button type="button" class="a11y-btn" data-tts="play">' + a11y_t.play + '</button>' +
@@ -141,12 +206,6 @@
     panel.querySelector(".a11y-close").addEventListener("click", function () { setOpen(false); });
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && panel.classList.contains("open")) setOpen(false);
-    });
-    document.addEventListener("click", function (e) {
-      if (panel.classList.contains("open") && !panel.contains(e.target) && !trigger.contains(e.target)) {
-        panel.classList.remove("open");
-        trigger.setAttribute("aria-expanded", "false");
-      }
     });
 
     /* Taille du texte */
@@ -180,6 +239,14 @@
     });
     applyTheme(read(STORAGE_THEME) || "dark");
 
+    /* Style visuel */
+    document.querySelectorAll("[data-style]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        setImagesStyle(btn.getAttribute("data-style"));
+      });
+    });
+    setImagesStyle(read(STORAGE_STYLE) || "scifi");
+
     /* Lecture vocale */
     var ttsGroup = panel.querySelector("#a11y-tts");
     if (!("speechSynthesis" in window)) {
@@ -188,6 +255,7 @@
     }
     var playBtn = panel.querySelector('[data-tts="play"]');
     var stopBtn = panel.querySelector('[data-tts="stop"]');
+    var ttsLangs = { fr: "fr-FR", en: "en-US", nl: "nl-NL", de: "de-DE", ja: "ja-JP" };
 
     playBtn.addEventListener("click", function () {
       window.speechSynthesis.cancel();
@@ -199,7 +267,7 @@
         if (t) parts.push(t);
       });
       var u = new SpeechSynthesisUtterance(parts.join(". "));
-      u.lang = "fr-FR";
+      u.lang = ttsLangs[lang] || "fr-FR";
       u.onstart = function () { playBtn.classList.add("active"); };
       u.onend = u.onerror = function () { playBtn.classList.remove("active"); };
       window.speechSynthesis.speak(u);

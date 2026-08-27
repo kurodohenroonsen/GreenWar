@@ -668,6 +668,49 @@ main { flex: 1 0 auto; }
 .tag--gold { color: var(--gold); background: var(--gold-soft); }
 .tag--red { color: var(--red); background: var(--red-soft); }
 
+.gallery-style-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  padding: 0.5rem;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  width: fit-content;
+}
+.gallery-style-filter span {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--text-3);
+  padding: 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.style-pill {
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+}
+.style-pill:hover {
+  color: var(--text);
+  background: var(--surface);
+}
+.style-pill.active, [data-img-style="scifi"] .style-pill[data-style="scifi"],
+[data-img-style="real"] .style-pill[data-style="real"],
+[data-img-style="toon"] .style-pill[data-style="toon"] {
+  background: var(--green);
+  color: var(--on-green);
+  border-color: var(--green);
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
