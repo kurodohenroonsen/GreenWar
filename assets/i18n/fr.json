@@ -1,0 +1,27 @@
+{
+  "locale": "fr_BE",
+  "dir": "ltr",
+  "flag": "🇫🇷",
+  "lang_name": "Français",
+  "prefix": "",
+  "slugs": {
+    "index": "index.html",
+    "piliers": "analyse-des-piliers.html",
+    "action": "action-symbiosique.html",
+    "galerie": "galerie-illustrations.html"
+  },
+  "nav_mission": "La mission",
+  "nav_diagnostic": "Le diagnostic",
+  "nav_action": "Solutions & action",
+  "nav_galerie": "Galerie",
+  "nav_join": "Nous rejoindre",
+  "nav_junior": "🧒 Espace Junior",
+  "site_title": "GREENWAR ASBL — La planète ne doit plus être le prix du progrès",
+  "site_desc": "Faire de la régénération des écosystèmes la source première de prospérité, de valeur et de développement pour 8 milliards de Citoyens-Consommateurs.",
+  "piliers_title": "Le diagnostic — Les trois piliers du « développement durable » | GREENWAR ASBL",
+  "piliers_desc": "Analyse systémique du développement durable d'après-guerre : comment les piliers économique, associatif et environnemental poursuivent l'argent, le pouvoir et la gloire.",
+  "action_title": "Solutions & action — L'arme économique des Citoyens-Consommateurs | GREENWAR ASBL",
+  "action_desc": "Les solutions concrètes de GREENWAR : le droit d'acheter comme levier souverain, les biotechnologies régénératives, la traçabilité cryptographique Ed25519.",
+  "galerie_title": "Galerie des Illustrations du Manifeste | GREENWAR ASBL",
+  "galerie_desc": "L'ensemble des 23 visuels artistiques sans texte illustrant le développement symbiosique et la souveraineté citoyenne."
+}

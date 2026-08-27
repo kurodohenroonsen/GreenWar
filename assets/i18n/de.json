@@ -1,0 +1,27 @@
+{
+  "locale": "de_DE",
+  "dir": "ltr",
+  "flag": "🇩🇪",
+  "lang_name": "Deutsch",
+  "prefix": "de/",
+  "slugs": {
+    "index": "index.html",
+    "piliers": "analyse-der-saeulen.html",
+    "action": "symbiotische-aktion.html",
+    "galerie": "illustrations-galerie.html"
+  },
+  "nav_mission": "Die Mission",
+  "nav_diagnostic": "Die Diagnose",
+  "nav_action": "Lösungen & Aktion",
+  "nav_galerie": "Galerie",
+  "nav_join": "Mitmachen",
+  "nav_junior": "🧒 Junior Bereich",
+  "site_title": "GREENWAR VoG — Der Planet darf nicht länger der Preis des Fortschritts sein",
+  "site_desc": "Ökosystem-Regeneration zur primären Quelle von Wohlstand, Wert und Entwicklung für 8 Milliarden Verbraucher-Bürger machen.",
+  "piliers_title": "Die Diagnose — Die drei Säulen der \"Nachhaltigen Entwicklung\" | GREENWAR VoG",
+  "piliers_desc": "Systemische Analyse der Nachkriegsentwicklung: Wie wirtschaftliche, assoziative und ökologische Säulen Geld, Macht und Ruhm verfolgen.",
+  "action_title": "Lösungen & Aktion — Die Wirtschaftskraft der Verbraucher-Bürger | GREENWAR VoG",
+  "action_desc": "Konkrete Lösungen von GREENWAR: Kaufkraft als Hebel, regenerative Biotechnologien und kryptografische P2P-Rückverfolgbarkeit.",
+  "galerie_title": "Manifest Illustrations-Galerie | GREENWAR VoG",
+  "galerie_desc": "Die vollständige Sammlung von 23 künstlerischen textfreien Illustrationen zur symbiotischen Entwicklung und Bürgersouveränität."
+}

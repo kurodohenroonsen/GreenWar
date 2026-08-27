@@ -1,0 +1,17 @@
+{
+  "locale": "nl_BE",
+  "flag": "🇳🇱",
+  "lang_name": "Nederlands",
+  "prefix": "nl/",
+  "slugs": {
+    "home": "index.html",
+    "why": "waarom-de-aarde-moe-is.html",
+    "power": "jouw-superkracht.html"
+  },
+  "nav_home": "De Aarde, ons thuis",
+  "nav_why": "Waarom de Aarde moe is",
+  "nav_power": "Jouw superkracht",
+  "nav_adult": "Volwassenen Site ↗",
+  "site_title": "GreenWar Junior — De Aarde Beschermers Club",
+  "site_sub": "De Aarde Beschermers Club"
+}

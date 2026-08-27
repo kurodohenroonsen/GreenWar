@@ -1,0 +1,27 @@
+{
+  "locale": "en_US",
+  "dir": "ltr",
+  "flag": "🇬🇧",
+  "lang_name": "English",
+  "prefix": "en/",
+  "slugs": {
+    "index": "index.html",
+    "piliers": "diagnostic-of-pillars.html",
+    "action": "symbiosic-action.html",
+    "galerie": "illustration-gallery.html"
+  },
+  "nav_mission": "Our Mission",
+  "nav_diagnostic": "The Diagnosis",
+  "nav_action": "Solutions & Action",
+  "nav_galerie": "Gallery",
+  "nav_join": "Join Us",
+  "nav_junior": "🧒 Junior Zone",
+  "site_title": "GREENWAR ASBL — The planet must no longer be the cost of progress",
+  "site_desc": "Making ecosystem regeneration the primary source of prosperity, value and development for 8 billion Consumer-Citizens.",
+  "piliers_title": "The Diagnosis — The Three Pillars of \"Sustainable Development\" | GREENWAR ASBL",
+  "piliers_desc": "Systemic analysis of post-WWII sustainable development: how economic, associative, and environmental pillars pursue money, power, and glory.",
+  "action_title": "Solutions & Action — The Economic Power of Consumer-Citizens | GREENWAR ASBL",
+  "action_desc": "Concrete solutions by GREENWAR: consumer purchasing power as leverage, regenerative biotechnologies, and P2P cryptographic traceability.",
+  "galerie_title": "Manifesto Illustration Gallery | GREENWAR ASBL",
+  "galerie_desc": "The complete collection of 23 artistic text-free visuals illustrating symbiosic development and citizen sovereignty."
+}

@@ -1,0 +1,27 @@
+{
+  "locale": "ja_JP",
+  "dir": "ltr",
+  "flag": "🇯🇵",
+  "lang_name": "日本語",
+  "prefix": "ja/",
+  "slugs": {
+    "index": "index.html",
+    "piliers": "three-pillars-analysis.html",
+    "action": "symbiosic-action.html",
+    "galerie": "illustration-gallery.html"
+  },
+  "nav_mission": "ミッション",
+  "nav_diagnostic": "現状診断",
+  "nav_action": "解決策と行動",
+  "nav_galerie": "ギャラリー",
+  "nav_join": "参加する",
+  "nav_junior": "🧒 ジュニアゾーン",
+  "site_title": "GREENWAR ASBL — 地球を進歩の代償にしてはならない",
+  "site_desc": "80億人の消費者市民のために、生態系の再生を繁栄・価値・発展の第一の源泉とする共生経済。",
+  "piliers_title": "現状診断 — 「持続可能な開発」の3つの柱の限界 | GREENWAR ASBL",
+  "piliers_desc": "戦後の持続可能な開発の構造的分析：経済・社会・環境の3つの柱がいかにして富・権力・名声を追求し地球を搾取しているか。",
+  "action_title": "解決策と行動 — 消費者市民の経済的武器 | GREENWAR ASBL",
+  "action_desc": "GREENWARの具体的な解決策：購入権を行使する力、再生バイオテクノロジー、P2P暗号学的トレーサビリティ。",
+  "galerie_title": "宣言イラストレーション・ギャラリー | GREENWAR ASBL",
+  "galerie_desc": "共生型開発と市民主権を表現したテキストを含まない23点の芸術的ビジュアルコレクション。"
+}

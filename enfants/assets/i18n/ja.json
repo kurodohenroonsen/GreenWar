@@ -1,0 +1,17 @@
+{
+  "locale": "ja_JP",
+  "flag": "🇯🇵",
+  "lang_name": "日本語",
+  "prefix": "ja/",
+  "slugs": {
+    "home": "index.html",
+    "why": "why-earth-is-tired.html",
+    "power": "your-superpower.html"
+  },
+  "nav_home": "地球、ぼくたちの家",
+  "nav_why": "地球が疲れている理由",
+  "nav_power": "きみのスーパーパワー",
+  "nav_adult": "大人向けサイト ↗",
+  "site_title": "グリーンウォー・ジュニア — 地球の守護者クラブ",
+  "site_sub": "地球の守護者クラブ"
+}

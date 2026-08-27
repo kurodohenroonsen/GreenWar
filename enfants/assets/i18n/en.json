@@ -1,0 +1,17 @@
+{
+  "locale": "en_US",
+  "flag": "🇬🇧",
+  "lang_name": "English",
+  "prefix": "en/",
+  "slugs": {
+    "home": "index.html",
+    "why": "why-earth-is-tired.html",
+    "power": "your-superpower.html"
+  },
+  "nav_home": "Earth, Our Home",
+  "nav_why": "Why Earth is Tired",
+  "nav_power": "Your Superpower",
+  "nav_adult": "Adults Site ↗",
+  "site_title": "GreenWar Junior — The Earth Guardians Club",
+  "site_sub": "The Earth Guardians Club"
+}

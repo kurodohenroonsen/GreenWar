@@ -1,0 +1,27 @@
+{
+  "locale": "nl_BE",
+  "dir": "ltr",
+  "flag": "🇳🇱",
+  "lang_name": "Nederlands",
+  "prefix": "nl/",
+  "slugs": {
+    "index": "index.html",
+    "piliers": "analyse-van-de-pijlers.html",
+    "action": "symbiotische-actie.html",
+    "galerie": "illustratie-galerij.html"
+  },
+  "nav_mission": "De Missie",
+  "nav_diagnostic": "De Diagnose",
+  "nav_action": "Oplossingen & Actie",
+  "nav_galerie": "Galerij",
+  "nav_join": "Doe Mee",
+  "nav_junior": "🧒 Junior Zone",
+  "site_title": "GREENWAR VZW — De planeet mag niet langer de prijs van vooruitgang zijn",
+  "site_desc": "Van ecosysteemherstel de primaire bron van welvaart, waarde en ontwikkeling maken voor 8 miljard Consument-Burgers.",
+  "piliers_title": "De Diagnose — De Drie Pijlers van \"Duurzame Ontwikkeling\" | GREENWAR VZW",
+  "piliers_desc": "Systemische analyse van naoorlogse duurzame ontwikkeling: hoe economische, maatschappelijke en milieupijlers geld, macht en roem nastreven.",
+  "action_title": "Oplossingen & Actie — De Economische Kracht van Consument-Burgers | GREENWAR VZW",
+  "action_desc": "Concrete oplossingen van GREENWAR: koopkracht als hefboom, regeneratieve biotechnologie en cryptografische P2P-traceerbaarheid.",
+  "galerie_title": "Manifest Illustratie Galerij | GREENWAR VZW",
+  "galerie_desc": "De complete collectie van 23 artistieke tekstvrije illustraties voor symbiotische ontwikkeling en burgerlijke soevereiniteit."
+}

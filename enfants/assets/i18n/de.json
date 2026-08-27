@@ -1,0 +1,17 @@
+{
+  "locale": "de_DE",
+  "flag": "🇩🇪",
+  "lang_name": "Deutsch",
+  "prefix": "de/",
+  "slugs": {
+    "home": "index.html",
+    "why": "warum-die-erde-muede-ist.html",
+    "power": "deine-superkraft.html"
+  },
+  "nav_home": "Die Erde, unser Zuhause",
+  "nav_why": "Warum die Erde müde ist",
+  "nav_power": "Deine Superkraft",
+  "nav_adult": "Erwachsenen Seite ↗",
+  "site_title": "GreenWar Junior — Der Club der Erdwächter",
+  "site_sub": "Der Club der Erdwächter"
+}

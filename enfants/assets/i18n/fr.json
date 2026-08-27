@@ -1,0 +1,17 @@
+{
+  "locale": "fr_BE",
+  "flag": "🇫🇷",
+  "lang_name": "Français",
+  "prefix": "",
+  "slugs": {
+    "home": "index.html",
+    "why": "pourquoi.html",
+    "power": "agir.html"
+  },
+  "nav_home": "La Terre, notre maison",
+  "nav_why": "Pourquoi la Terre est fatiguée",
+  "nav_power": "Ton super-pouvoir",
+  "nav_adult": "Site des grands ↗",
+  "site_title": "GreenWar Junior — Le club des gardiens de la Terre",
+  "site_sub": "Le club des gardiens de la Terre"
+}
