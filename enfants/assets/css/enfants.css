@@ -1,0 +1,194 @@
+/* =========================================================
+   GREENWAR JUNIOR — charte graphique enfants (8-12 ans)
+   Fond clair, formes rondes, gros texte, une mascotte : Pépin.
+   Palette : feuille, soleil, ciel, corail. Jamais de noir pur.
+   ========================================================= */
+
+:root {
+  --bg: #f6fbf2;
+  --paper: #ffffff;
+  --ink: #1f3a2c;
+  --ink-2: #4f6a5b;
+  --line: #d9e9dc;
+
+  --leaf: #2fb36b;
+  --leaf-dark: #1e8a50;
+  --leaf-soft: #dff5e7;
+  --sun: #ffc83d;
+  --sun-soft: #fff3cc;
+  --sky: #48b5e6;
+  --sky-soft: #ddf2fb;
+  --coral: #ff7a59;
+  --coral-soft: #ffe4dc;
+  --grape: #9b7bea;
+  --grape-soft: #ece5fb;
+
+  --font-display: "Baloo 2", "Arial Rounded MT Bold", "Nunito", "Segoe UI", sans-serif;
+  --font-body: "Nunito", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+
+  --radius: 22px;
+  --radius-sm: 14px;
+  --shadow: 0 6px 0 rgba(31, 58, 44, 0.08), 0 14px 30px rgba(31, 58, 44, 0.08);
+  --container: 1080px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-family: var(--font-body); font-size: 18px; line-height: 1.6; background: var(--bg); color: var(--ink); scroll-behavior: smooth; scroll-padding-top: 90px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+body { min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); }
+img { display: block; max-width: 100%; height: auto; }
+a { color: var(--leaf-dark); }
+:focus-visible { outline: 4px solid var(--sun); outline-offset: 3px; border-radius: 8px; }
+
+h1, h2, h3 { font-family: var(--font-display); font-weight: 800; line-height: 1.1; color: var(--ink); text-wrap: balance; }
+h1 { font-size: clamp(2.2rem, 1.4rem + 3.5vw, 3.8rem); }
+h2 { font-size: clamp(1.7rem, 1.2rem + 2vw, 2.5rem); }
+h3 { font-size: 1.35rem; }
+p { text-wrap: pretty; }
+strong { color: var(--leaf-dark); font-weight: 800; }
+
+.skip-link { position: absolute; top: -100px; left: 1rem; z-index: 1000; background: var(--sun); color: var(--ink); padding: .7rem 1.2rem; border-radius: 999px; font-weight: 800; text-decoration: none; }
+.skip-link:focus { top: 1rem; }
+
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 clamp(1.1rem, 4vw, 2rem); }
+main { flex: 1 0 auto; }
+
+/* ---- En-tête ---- */
+.top { position: sticky; top: 0; z-index: 100; background: rgba(246, 251, 242, .92); backdrop-filter: blur(10px); border-bottom: 3px solid var(--leaf-soft); }
+.top .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 78px; }
+.brand { display: flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--ink); }
+.brand img { width: 46px; height: 46px; }
+.brand b { font-family: var(--font-display); font-size: 1.35rem; font-weight: 800; letter-spacing: .02em; }
+.brand b span { color: var(--leaf); }
+.brand small { display: block; font-size: .72rem; font-weight: 700; color: var(--ink-2); letter-spacing: .08em; text-transform: uppercase; }
+
+.menu { display: flex; align-items: center; gap: .4rem; list-style: none; }
+.menu a { display: inline-block; padding: .55rem 1rem; border-radius: 999px; font-weight: 800; text-decoration: none; color: var(--ink); font-size: .95rem; }
+.menu a:hover { background: var(--leaf-soft); }
+.menu a[aria-current="page"] { background: var(--leaf); color: #fff; }
+.menu .grown { background: var(--sun-soft); color: var(--ink-2); font-size: .85rem; }
+
+.menu-toggle { display: none; width: 48px; height: 48px; border-radius: 14px; border: 3px solid var(--leaf-soft); background: #fff; cursor: pointer; align-items: center; justify-content: center; color: var(--ink); }
+.menu-toggle svg { width: 24px; height: 24px; }
+
+/* ---- Hero ---- */
+.hero { padding: clamp(2rem, 6vw, 4.5rem) 0 clamp(2rem, 5vw, 3.5rem); background:
+  radial-gradient(40% 50% at 90% 0%, var(--sun-soft) 0%, transparent 70%),
+  radial-gradient(40% 50% at 0% 100%, var(--sky-soft) 0%, transparent 70%); }
+.hero .container { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+.hero--single .container { grid-template-columns: minmax(0, 720px); }
+.hero__text { display: flex; flex-direction: column; gap: 1.2rem; }
+.hero p { font-size: 1.2rem; color: var(--ink-2); max-width: 48ch; }
+.hero__media img { border-radius: var(--radius); box-shadow: var(--shadow); border: 5px solid #fff; aspect-ratio: 3 / 2; object-fit: cover; width: 100%; }
+.hero h1 .wave { color: var(--leaf); }
+
+.kicker { display: inline-flex; align-items: center; gap: .5rem; align-self: flex-start; padding: .35rem .9rem; border-radius: 999px; background: var(--sun-soft); color: var(--ink); font-weight: 800; font-size: .85rem; letter-spacing: .04em; }
+.kicker--sky { background: var(--sky-soft); }
+.kicker--coral { background: var(--coral-soft); }
+.kicker--grape { background: var(--grape-soft); }
+
+/* ---- Boutons ---- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; padding: .85rem 1.5rem; border-radius: 999px; font: inherit; font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; text-decoration: none; cursor: pointer; border: 0; box-shadow: 0 5px 0 rgba(0, 0, 0, .12); transition: transform .15s ease, box-shadow .15s ease; color: var(--ink); }
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(3px); box-shadow: 0 2px 0 rgba(0, 0, 0, .12); }
+.btn--leaf { background: var(--leaf); color: #fff; }
+.btn--sun { background: var(--sun); }
+.btn--sky { background: var(--sky); color: #fff; }
+.btn--white { background: #fff; border: 3px solid var(--leaf-soft); box-shadow: none; }
+.btn-row { display: flex; flex-wrap: wrap; gap: .8rem; }
+
+/* ---- Sections ---- */
+.section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.section--leaf { background: var(--leaf-soft); }
+.section--sky { background: var(--sky-soft); }
+.section--sun { background: var(--sun-soft); }
+.section-head { max-width: 680px; margin-bottom: 2rem; display: flex; flex-direction: column; gap: .6rem; }
+.section-head--center { margin-left: auto; margin-right: auto; text-align: center; align-items: center; }
+.section-head p { font-size: 1.15rem; color: var(--ink-2); }
+
+/* ---- Blocs image + texte ---- */
+.story { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+.story + .story { margin-top: 3rem; }
+.story--flip .story__media { order: 2; }
+.story__media img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius); border: 5px solid #fff; box-shadow: var(--shadow); }
+.story__text { display: flex; flex-direction: column; gap: .9rem; }
+.story__text p { color: var(--ink-2); font-size: 1.08rem; }
+
+/* ---- Bulle de Pépin ---- */
+.pepin { display: grid; grid-template-columns: 84px 1fr; gap: 1rem; align-items: center; padding: 1rem 1.2rem; background: #fff; border: 3px solid var(--leaf-soft); border-radius: var(--radius); }
+.pepin img { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; background: var(--leaf-soft); }
+.pepin p { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--ink); }
+.pepin p::before { content: "Pépin dit : "; color: var(--leaf); }
+
+/* ---- Cartes ---- */
+.cards { display: grid; gap: 1.2rem; }
+.cards--2 { grid-template-columns: repeat(2, 1fr); }
+.cards--3 { grid-template-columns: repeat(3, 1fr); }
+.cards--4 { grid-template-columns: repeat(4, 1fr); }
+.card { background: var(--paper); border-radius: var(--radius); padding: 1.4rem; box-shadow: var(--shadow); border: 3px solid transparent; display: flex; flex-direction: column; gap: .6rem; }
+.card--leaf { border-color: var(--leaf-soft); } .card--sun { border-color: var(--sun-soft); } .card--sky { border-color: var(--sky-soft); } .card--coral { border-color: var(--coral-soft); } .card--grape { border-color: var(--grape-soft); }
+.card__icon { width: 64px; height: 64px; border-radius: 20px; display: grid; place-items: center; font-size: 2rem; background: var(--leaf-soft); }
+.card--sun .card__icon { background: var(--sun-soft); } .card--sky .card__icon { background: var(--sky-soft); } .card--coral .card__icon { background: var(--coral-soft); } .card--grape .card__icon { background: var(--grape-soft); }
+.card h3 { font-size: 1.25rem; }
+.card p { color: var(--ink-2); font-size: 1rem; }
+.card img { border-radius: var(--radius-sm); aspect-ratio: 3 / 2; object-fit: cover; }
+
+/* ---- Grands chiffres ---- */
+.bignums { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+.bignum { text-align: center; background: #fff; border-radius: var(--radius); padding: 1.4rem 1rem; box-shadow: var(--shadow); }
+.bignum b { display: block; font-family: var(--font-display); font-size: clamp(2rem, 1.5rem + 2vw, 3rem); font-weight: 800; color: var(--leaf); line-height: 1; }
+.bignum span { display: block; margin-top: .4rem; font-weight: 700; color: var(--ink-2); }
+
+/* ---- Défis (checklist) ---- */
+.missions { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: .9rem; }
+.mission { display: flex; gap: .9rem; align-items: flex-start; background: #fff; border-radius: var(--radius-sm); padding: 1rem 1.1rem; border: 3px solid var(--line); cursor: pointer; transition: border-color .15s ease, background .15s ease; }
+.mission:has(input:checked) { border-color: var(--leaf); background: var(--leaf-soft); }
+.mission input { width: 28px; height: 28px; accent-color: var(--leaf); flex-shrink: 0; margin-top: .15rem; cursor: pointer; }
+.mission b { font-family: var(--font-display); font-size: 1.1rem; display: block; }
+.mission span { color: var(--ink-2); font-size: .95rem; }
+.missions-score { margin-top: 1.2rem; font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; text-align: center; }
+
+/* ---- Quiz ---- */
+.quiz { display: grid; gap: 1rem; }
+.quiz__q { background: #fff; border-radius: var(--radius); padding: 1.3rem; box-shadow: var(--shadow); }
+.quiz__q h3 { margin-bottom: .8rem; }
+.quiz__a { display: flex; flex-wrap: wrap; gap: .6rem; }
+.quiz__a button { font: inherit; font-weight: 800; padding: .6rem 1rem; border-radius: 999px; border: 3px solid var(--line); background: #fff; cursor: pointer; color: var(--ink); }
+.quiz__a button:hover { border-color: var(--sky); }
+.quiz__a button.good { background: var(--leaf-soft); border-color: var(--leaf); }
+.quiz__a button.bad { background: var(--coral-soft); border-color: var(--coral); }
+.quiz__why { margin-top: .8rem; font-weight: 700; color: var(--ink-2); min-height: 1.5em; }
+
+/* ---- Bandeau final ---- */
+.band { text-align: center; padding: clamp(2rem, 5vw, 3.5rem); background: var(--leaf); color: #fff; border-radius: var(--radius); box-shadow: var(--shadow); }
+.band h2 { color: #fff; }
+.band p { margin: .6rem auto 1.4rem; max-width: 50ch; font-size: 1.15rem; color: #eafbf0; }
+
+/* ---- Pour les grands ---- */
+.grownups { background: #fff; border: 3px dashed var(--sun); border-radius: var(--radius); padding: 1.4rem 1.6rem; }
+.grownups h2 { font-size: 1.4rem; margin-bottom: .5rem; }
+.grownups p { color: var(--ink-2); font-size: 1rem; }
+
+/* ---- Pied de page ---- */
+.foot { padding: 2.5rem 0 1.5rem; border-top: 3px solid var(--leaf-soft); color: var(--ink-2); font-size: .95rem; }
+.foot .container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; align-items: center; }
+.foot a { color: var(--leaf-dark); font-weight: 700; }
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .cards--4 { grid-template-columns: repeat(2, 1fr); }
+  .cards--3 { grid-template-columns: 1fr; }
+  .bignums { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .hero .container, .story { grid-template-columns: 1fr; }
+  .hero__media { order: -1; }
+  .story--flip .story__media { order: 0; }
+  .cards--2, .cards--4, .missions { grid-template-columns: 1fr; }
+  .menu-toggle { display: inline-flex; }
+  .menu { position: fixed; inset: 78px 0 auto 0; display: none; flex-direction: column; align-items: stretch; padding: 1rem; background: #fff; border-bottom: 3px solid var(--leaf-soft); box-shadow: var(--shadow); }
+  .menu.open { display: flex; }
+  .menu a { display: block; padding: .9rem 1rem; text-align: center; }
+  .brand small { display: none; }
+}
